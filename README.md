@@ -2,7 +2,7 @@
 
 A CSS UI Kit inspired by [elementaryOS](http://elementaryos.org/), a free and open source OS built on [Ubuntu](http://www.ubuntu.com/).
 
-For more elemtnaryOS UI, you can view the [#elementaryOS](http://elementaryos.deviantart.com/) and [#elementary-art](http://elementary-art.deviantart.com/) groups on deviantART,
+For more elemtnaryOS UI, you can view the [#elementaryOS](http://elementaryos.deviantart.com/) and [#elementary-art](http://elementary-art.deviantart.com/) groups on deviantART.
 
 *[elementaryOS Human Interface Guidelines](http://elementaryos.org/docs/human-interface-guidelines)*
 
