@@ -1,0 +1,222 @@
+<!doctype html>
+<head>
+
+	<meta charset="utf-8">
+	<title>elementary UI</title>
+	
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" href="style.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+	
+	<script src="js/prefix.free.js"></script>
+	<script src="js/modernizr.js"></script>
+	
+</head>
+<body>
+	
+	<div class="container">
+	
+		<header>elementary UI</header>
+		
+		<article>
+		
+			<h3>Toggle Checkbox</h3>
+			
+			<section>
+			
+				<input type="checkbox" class="toggle"><i class="toggle-bg"></i>
+			
+				<input type="checkbox" class="toggle" checked><i class="toggle-bg"></i>
+				
+			</section>
+			
+			<section>
+			
+				<input type="checkbox" class="toggle" checked disabled><i class="toggle-bg"></i>
+			
+				<input type="checkbox" class="toggle" disabled><i class="toggle-bg"></i>
+				
+			</section>
+		
+		</article>
+		
+		<article>
+		
+			<h3>Form Buttons</h3>
+		
+			<section>
+				
+				
+				<label for="radio-1">Radio Button</label>
+					<input type="radio" id="radio-1" name="foo"><i class="radio-bg"></i>
+				
+				<br>
+				
+				<label for="radio-2">Radio Button</label>
+					<input type="radio" id="radio-2" name="foo" checked><i class="radio-bg"></i>
+
+				<br>				
+				
+				<label for="radio-3">Radio Button</label>
+					<input type="radio" id="radio-3" name="foo"><i class="radio-bg"></i>
+				
+			</section>
+		  
+			<section>
+			
+				<label for="checkbox-1">Checkbox</label>
+					<input type="checkbox" id="checkbox-1" checked><i class="check-bg"></i>
+				
+				<br>
+				
+				<label for="checkbox-2">Checkbox</label>
+					<input type="checkbox" id="checkbox-2"><i class="check-bg"></i>
+
+				<br>				
+				
+				<label for="checkbox-3">Checkbox</label>
+					<input type="checkbox" id="checkbox-3" checked><i class="check-bg"></i>
+			
+			</section>
+			
+		</article>
+		
+		<article>
+			
+			<h3>Range and Progress</h3>
+			
+			<section>
+			
+				<div class="range"></div>
+				
+			</section>
+			
+			<section>
+			
+				<div class="progress"></div>
+			
+			</section>
+		
+		</article>
+		
+		<article>
+		
+			<h3>Text Fields</h3>
+		
+			<section>
+			
+				<input type="text" placeholder="Text Field">
+				
+				<br>
+				
+				<input type="search" placeholder="Search">
+				
+				<br>
+				
+				<input type="password" placeholder="Password">
+				
+				<br>
+			
+			</section>
+			
+			<section>
+				
+				<textarea placeholder="Textarea"></textarea>
+					
+			</section>
+		
+		</article>
+		
+		<article>
+
+			<h3>Buttons</h3>
+		
+			<section>
+				
+				<input type="submit" value="Input">
+				<button>Button</button>
+				<a href="#" class="button">Anchor</a>
+				
+				<br>
+				
+				<input type="submit" value="Input" disabled>
+				<button disabled>Button</button>
+				<a href="#" class="button disabled">Anchor</a>
+
+			</section>
+			
+			<section>
+
+				<input type="submit" value="Input" class="blue">
+				<button class="blue">Button</button>
+				<a href="#" class="button blue">Anchor</a>
+				
+				<br>
+
+				<input type="submit" value="Input" class="red">
+				<button class="red">Button</button>
+				<a href="#" class="button red">Anchor</a>
+		
+			</section>
+		
+		</article>
+	
+	</div><!-- End Container -->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+	<script src="js/jquery.ui.js"></script>
+	
+	<script>
+	$(function() {
+	
+		// jQuery UI Slider
+		$( ".range" ).slider({
+			range: "min",
+			value: 22,
+			min: 1,
+			max: 100
+		});
+		
+		// jQuery UI Progress
+		$( ".progress" ).progressbar({
+			value: 44
+		});
+		
+		// Placeholder Polyfill
+		if (!Modernizr.input.placeholder) {
+			$('[placeholder]').focus(function() {
+				var input = $(this);
+				if (input.val() == input.attr('placeholder')) {
+					input.val('');
+					input.removeClass('placeholder');
+				}
+			}).blur(function() {
+				var input = $(this);
+				if (input.val() == '' || input.val() == input.attr('placeholder')) {
+					input.addClass('placeholder');
+					input.val(input.attr('placeholder'));
+				}
+			}).blur();
+
+			$('[placeholder]').parents('form').submit(function() {
+				$(this).find('[placeholder]').each(function() {
+					var input = $(this);
+						if (input.val() == input.attr('placeholder')) {
+						input.val('');
+					}
+				})
+			});
+		}
+		
+	});
+	</script>
+	
+</body>
