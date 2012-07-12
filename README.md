@@ -8,7 +8,7 @@ For more elemtnaryOS UI, you can view the [#elementaryOS](http://elementaryos.de
 
 ## Demo
 
-
+**[Live Demo](http://nateify.github.com/elementaryOS-UI/)
 
 ## Browser Support
 
