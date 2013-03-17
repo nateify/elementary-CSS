@@ -1,0 +1,391 @@
+/* Import Bourbon Library */
+@import 'bourbon/bourbon';
+
+/* Icon Font Face */
+@include font-face(econ, "font/econ");
+
+/* Variables */
+$baseFontSize: 16px;
+$baseLineHeight: 1.75;
+$baseHeading: 40px;
+$Sans: "Droid Sans", Verdana, Geneva, sans-serif;
+$Mono: "Droid Sans Mono", Consolas, Courier, monospace;
+$eRadius: 3px;
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    @include box-sizing(border-box);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #4d4d4d;
+    font-family: $Sans;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    padding: 20px 40px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin: ($baseHeading / 2) 0;
+}
+
+h1 { font-size: $baseHeading; }
+h2 { font-size: $baseHeading * (5/6); }
+h3 { font-size: $baseHeading * (4.5/6); }
+h4 { font-size: $baseHeading * (4/6); }
+h5 { font-size: $baseHeading * (3.5/6); }
+h6 { font-size: $baseHeading * (3/6); }
+
+p {
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+}
+
+blockquote {
+    border-left: 4px double #bfbfbf;
+    padding: 5px 5px 10px 20px;
+
+    p {
+        font-size: $baseFontSize * (5/4);
+        font-style: italic;
+        line-height: $baseLineHeight * (5/4);
+        
+        i, em { font-style: normal; }
+    }
+    
+    small {
+        color: #999999;
+        display: block;
+        font-size: $baseFontSize * (4/5);
+        line-height: $baseLineHeight * (8/7);
+        
+        &:before { content: "\2014 \00A0"; }
+    }
+}
+
+code {
+    background: #fcfcfc;
+    border: 1px solid #f2f2f2;
+    border-radius: $eRadius;
+    color: hsl(203, 82, 44);
+    font-size: $baseFontSize * (7/8);
+    font-weight: 400;
+    padding: 5px;
+}
+
+pre {
+    @extend code;
+    color: hsl(203, 0, 44);
+    padding-left: 15px;
+}
+
+/* Buttons */
+.btn {
+    @include appearance(none);
+    background: #f5f5f5;
+    border: 1px solid #d2d2d2;
+    border-radius: $eRadius;
+    box-shadow: inset 0 1px 0 0 #fff;
+    color: #515151;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $Sans;
+    font-size: $baseFontSize * (7/8);
+    padding: 4px 12px;
+    margin-bottom: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    
+    &::-moz-focus-inner { /* Fix for Firefox */
+        border: 0;
+        padding: 0;
+    }
+}
+
+.btn:active {
+    background: #ebebeb;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+.btn-large {
+    font-size: $baseFontSize * (5/4);
+    padding: 6px 18px;
+}
+
+.btn-blue, .btn-red, .btn-black, .btn-blue:active, .btn-red:active {
+    color: #fff;
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.6), inset 0 0 0 1px rgba(255,255,255,0.3);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    
+    i[class^="icon-"] { color: #fff }
+}
+
+.btn-blue {
+    border-color: #2689be;
+    @include linear-gradient(#55beec, #388be6);
+    
+    &:active { @include linear-gradient(bottom, #55beec, #388be6); }
+}
+
+.btn-red {
+    border-color: #621b12;
+    @include linear-gradient(#e7705a, #b72234);
+    
+    &:active { @include linear-gradient(bottom, #e7705a, #b72234); }
+}
+
+.btn-black {
+    border-color: #0c0c0c;
+    @include linear-gradient(#333, #232323);
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.3), inset 0 0 0 1px rgba(255,255,255,0.15);
+    
+    &:active {
+        @include linear-gradient(bottom, #333, #232323);
+        box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.3), inset 0 0 0 1px rgba(255,255,255,0.15);
+    }
+}
+
+.btn.disabled, .btn[disabled] {
+    cursor: not-allowed;
+    @include user-select(none);
+    opacity: 0.75;
+}
+
+/* Form Elements */
+label { cursor: pointer }
+
+input[type="checkbox"], input[type="radio"], input.toggle {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+}
+
+.check-bg, .radio-bg {
+    background-image: url(../img/form.png);
+    position: relative;
+    z-index: -1;
+}
+
+input[type="checkbox"], .check-bg {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.check-bg {
+     left: -16px;
+}
+
+input[type="checkbox"]:checked + .check-bg {
+    background-position: -16px 0
+}
+
+input[type="radio"], .radio-bg {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}
+
+.radio-bg {
+    background-position: 0 -16px;
+    left: -14px;
+}
+
+input[type="radio"]:checked + .radio-bg {
+    background-position: -14px -16px
+}
+
+input.toggle, .toggle-bg {
+    display: block;
+    height: 22px;
+    width: 56px;
+}
+
+.toggle-bg, .toggle-bg:after {
+    background: url(../img/toggle.png)
+}
+
+.toggle-bg {
+    border-right: 1px solid #a0a0a0;
+    border-radius: 11px;
+    position: relative;
+    top: -22px;
+    @include transition (all 0.15s ease-out);
+    z-index: -1;
+}
+
+.toggle-bg:after {
+    background-position: 0 -22px;
+    content: "";
+    height: 22px;
+    float: left;
+    width: 22px;
+}
+
+input.toggle:checked + .toggle-bg {
+    background-position: 33px 0;
+    border-right: 1px solid #286da6;
+    border-left: 1px solid #286da6;
+    padding-left: 33px;
+}
+
+/* Text Fields */
+#{$all-text-inputs}, textarea {
+    @include appearance(textfield);
+    border: 1px solid #8e8e8e;
+    border-radius: $eRadius;
+    @include linear-gradient(#f7f7f7, #fff);
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.2);
+    @include box-sizing(border-box);
+    font-family: $Sans;
+    margin: 0;
+    padding: 7px;
+    
+    @include placeholder {
+        color: #b0b0b0;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    overflow-y: auto;
+}
+
+input[type="search"] {
+    @include background-image(url("../img/search.png"), linear-gradient(#f7f7f7, #fff));
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+/* Icons */
+[class^="icon-"]:before, [class*=" icon-"]:before, i[class^="icon-"] {
+    font-family: econ;
+    font-size: 19px;
+    height: 19px;
+    padding-right: 10px;
+    @include user-select(none);
+    width: 19px;
+}
+
+i[class^="icon-"] {
+    font-style: normal;
+    padding: 0;
+}
+
+.icon-e:before { content: "A"; }
+.icon-right:before { content: "C"; }
+.icon-down:before { content: "D"; }
+.icon-hardright:before { content: "E"; }
+.icon-harddown:before { content: "F"; }
+.icon-left:before { content: "G"; }
+.icon-hardleft:before { content: "H"; }
+.icon-up:before { content: "I"; }
+.icon-hardup:before { content: "J"; }
+.icon-home:before { content: "K"; }
+.icon-docleft:before { content: "L"; }
+.icon-docright:before { content: "M"; }
+.icon-closeleft:before { content: "N"; }
+.icon-closeright:before { content: "O"; }
+.icon-minus:before { content: "P"; }
+.icon-check:before { content: "Q"; }
+.icon-error:before { content: "R"; }
+.icon-gear:before { content: "S"; }
+.icon-docs:before { content: "T"; }
+.icon-download:before { content: "U"; }
+.icon-movie:before { content: "V"; }
+.icon-hdd:before { content: "W"; }
+.icon-search:before { content: "X"; }
+.icon-circle:before { content: "Y"; }
+.icon-close:before { content: "Z"; }
+.icon-print:before { content: "a"; }
+.icon-doccopy:before { content: "b"; }
+.icon-bluetooth:before { content: "c"; }
+.icon-bullet:before { content: "d"; }
+.icon-star:before { content: "e"; }
+.icon-plus:before { content: "f"; }
+.icon-power:before { content: "g"; }
+.icon-refresh:before { content: "h"; }
+.icon-music:before { content: "i"; }
+.icon-globe:before { content: "j"; }
+.icon-info:before { content: "k"; }
+.icon-adduser:before { content: "l"; }
+.icon-user:before { content: "m"; }
+.icon-secure:before { content: "n"; }
+.icon-unsecure:before { content: "o"; }
+.icon-lock:before { content: "p"; }
+.icon-unlock:before { content: "q"; }
+.icon-settings:before { content: "r"; }
+.icon-play:before { content: "s"; }
+.icon-pause:before { content: "t"; }
+.icon-forward:before { content: "u"; }
+.icon-rewind:before { content: "v"; }
+.icon-eject:before { content: "w"; }
+.icon-skip:before { content: "x"; }
+.icon-shuffle:before { content: "y"; }
+.icon-repeat:before { content: "z"; }
+.icon-repeatone:before { content: "1"; }
+.icon-returnleft:before { content: "2"; }
+.icon-returnright:before { content: "3"; }
+.icon-largefont:before { content: "4"; }
+.icon-smallfont:before { content: "5"; }
+.icon-camera:before { content: "8"; }
+.icon-video:before { content: "9"; }
+.icon-mic:before { content: "0"; }
+.icon-micremove:before { content: "!"; }
+.icon-micone:before { content: "\0022"; }
+.icon-mictwo:before { content: "\00A3"; }
+.icon-micthree:before { content: "%"; }
+.icon-soundoff:before { content: "^"; }
+.icon-soundlow:before { content: "&"; }
+.icon-soundmed:before { content: "*"; }
+.icon-soundhi:before { content: "("; }
+.icon-wifioff:before { content: ")"; }
+.icon-wifilow:before { content: "-"; }
+.icon-wifimed:before { content: "_"; }
+.icon-wifihi:before { content: "="; }
+.icon-wifimax:before { content: "+"; }
+.icon-col:before { content: "["; }
+.icon-carousel:before { content: "]"; }
+.icon-list:before { content: "{"; }
+.icon-listicons:before { content: "}"; }
+.icon-grid:before { content: ";"; }
+.icon-details:before { content: ":"; }

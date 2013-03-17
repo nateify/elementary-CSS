@@ -1,222 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-	<meta charset="utf-8">
-	<title>elementary UI</title>
-	
-	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link rel="stylesheet" href="style.css">
-	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-	
-	<!--[if lt IE 9]>
-		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-	<![endif]-->
-	
-	<script src="js/prefix.free.js"></script>
-	<script src="js/modernizr.js"></script>
-	
+    <meta charset="utf-8">
+    <title>elementary CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-	
-	<div class="container">
-	
-		<header>elementary UI</header>
-		
-		<article>
-		
-			<h3>Toggle Checkbox</h3>
-			
-			<section>
-			
-				<input type="checkbox" class="toggle"><i class="toggle-bg"></i>
-			
-				<input type="checkbox" class="toggle" checked><i class="toggle-bg"></i>
-				
-			</section>
-			
-			<section>
-			
-				<input type="checkbox" class="toggle" checked disabled><i class="toggle-bg"></i>
-			
-				<input type="checkbox" class="toggle" disabled><i class="toggle-bg"></i>
-				
-			</section>
-		
-		</article>
-		
-		<article>
-		
-			<h3>Form Buttons</h3>
-		
-			<section>
-				
-				
-				<label for="radio-1">Radio Button</label>
-					<input type="radio" id="radio-1" name="foo"><i class="radio-bg"></i>
-				
-				<br>
-				
-				<label for="radio-2">Radio Button</label>
-					<input type="radio" id="radio-2" name="foo" checked><i class="radio-bg"></i>
 
-				<br>				
-				
-				<label for="radio-3">Radio Button</label>
-					<input type="radio" id="radio-3" name="foo"><i class="radio-bg"></i>
-				
-			</section>
-		  
-			<section>
-			
-				<label for="checkbox-1">Checkbox</label>
-					<input type="checkbox" id="checkbox-1" checked><i class="check-bg"></i>
-				
-				<br>
-				
-				<label for="checkbox-2">Checkbox</label>
-					<input type="checkbox" id="checkbox-2"><i class="check-bg"></i>
+    <section><!-- Headings -->
+    
+        <h1>h1. Heading 1</h1>
+        <h2>h2. Heading 2</h2>
+        <h3>h3. Heading 3</h3>
+        <h4>h4. Heading 4</h4>
+        <h5>h5. Heading 5</h5>
+        <h6>h6. Heading 6</h6>
+        
+    </section>
+    
+    <section><!-- Paragraphs -->
+    
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend iaculis velit eu aliquet. Donec nibh mi, accumsan ut tempor vitae, bibendum sit amet ligula. Aenean fermentum pharetra adipiscing. Nam eget nisl eros. Duis cursus porttitor urna, sit amet consequat neque porttitor a. Vivamus vel odio ut lorem aliquet facilisis. Praesent tincidunt dignissim varius. Suspendisse lobortis fermentum libero eget imperdiet. Suspendisse lobortis ante mollis dolor tristique lacinia. Vivamus porta libero sed felis suscipit bibendum. Nam vulputate suscipit viverra. Pellentesque facilisis, lectus ac consectetur mattis, urna libero sagittis lectus, et porta lectus ligula et orci. Maecenas vulputate, turpis eget porttitor ullamcorper, felis massa molestie arcu, a molestie erat tellus nec nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Donec eleifend mi arcu, ac placerat leo.</p>        
+        
+    </section>
+    
+    <section><!-- Blockquotes -->
+    
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <small>Someone famous in Source Title</small>
+        </blockquote>
+        
+    </section>
+    
+    <section><!-- Buttons -->
+        
+        <section>
+            <a href="#" class="btn">Anchor</a> <button class="btn">Button</button> <input type="button" class="btn" value="Input">
+        </section>
+                
+        <section>
+            <button class="btn btn-large">Large Button</button>
+        </section>
+                
+        <section>
+            <button class="btn btn-blue">Blue</button> <button class="btn btn-red">Red</button> <button class="btn btn-black">Black</button>
+        </section>
+        
+    </section>
+    
+    <section><!-- Radio and Checkbox -->
+    
+        <label for="r1">Radio Button</label>
+        <input type="radio" id="r1" name="r"><i class="radio-bg"></i>
+        
+        <br>
+        
+        <label for="r2">Radio Button</label>
+        <input type="radio" id="r2" name="r" checked><i class="radio-bg"></i>
 
-				<br>				
-				
-				<label for="checkbox-3">Checkbox</label>
-					<input type="checkbox" id="checkbox-3" checked><i class="check-bg"></i>
-			
-			</section>
-			
-		</article>
-		
-		<article>
-			
-			<h3>Range and Progress</h3>
-			
-			<section>
-			
-				<div class="range"></div>
-				
-			</section>
-			
-			<section>
-			
-				<div class="progress"></div>
-			
-			</section>
-		
-		</article>
-		
-		<article>
-		
-			<h3>Text Fields</h3>
-		
-			<section>
-			
-				<input type="text" placeholder="Text Field">
-				
-				<br>
-				
-				<input type="search" placeholder="Search">
-				
-				<br>
-				
-				<input type="password" placeholder="Password">
-				
-				<br>
-			
-			</section>
-			
-			<section>
-				
-				<textarea placeholder="Textarea"></textarea>
-					
-			</section>
-		
-		</article>
-		
-		<article>
+        <br>
+        
+        <label for="radio-3">Radio Button</label>
+        <input type="radio" id="r3" name="r"><i class="radio-bg"></i>
+    
+        <br>
+    
+        <label for="c1">Checkbox</label>
+        <input type="checkbox" id="c1" checked><i class="check-bg"></i>
 
-			<h3>Buttons</h3>
-		
-			<section>
-				
-				<input type="submit" value="Input">
-				<button>Button</button>
-				<a href="#" class="button">Anchor</a>
-				
-				<br>
-				
-				<input type="submit" value="Input" disabled>
-				<button disabled>Button</button>
-				<a href="#" class="button disabled">Anchor</a>
+        <br>
 
-			</section>
-			
-			<section>
+        <label for="c2">Checkbox</label>
+        <input type="checkbox" id="c2"><i class="check-bg"></i>
 
-				<input type="submit" value="Input" class="blue">
-				<button class="blue">Button</button>
-				<a href="#" class="button blue">Anchor</a>
-				
-				<br>
+        <br>
 
-				<input type="submit" value="Input" class="red">
-				<button class="red">Button</button>
-				<a href="#" class="button red">Anchor</a>
-		
-			</section>
-		
-		</article>
-	
-	</div><!-- End Container -->
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	
-	<script src="js/jquery.ui.js"></script>
-	
-	<script>
-	$(function() {
-	
-		// jQuery UI Slider
-		$( ".range" ).slider({
-			range: "min",
-			value: 22,
-			min: 1,
-			max: 100
-		});
-		
-		// jQuery UI Progress
-		$( ".progress" ).progressbar({
-			value: 44
-		});
-		
-		// Placeholder Polyfill
-		if (!Modernizr.input.placeholder) {
-			$('[placeholder]').focus(function() {
-				var input = $(this);
-				if (input.val() == input.attr('placeholder')) {
-					input.val('');
-					input.removeClass('placeholder');
-				}
-			}).blur(function() {
-				var input = $(this);
-				if (input.val() == '' || input.val() == input.attr('placeholder')) {
-					input.addClass('placeholder');
-					input.val(input.attr('placeholder'));
-				}
-			}).blur();
+        <label for="c3">Checkbox</label>
+        <input type="checkbox" id="c3" checked><i class="check-bg"></i>
+        
+        
+    
+    </section>
+    
+    <section><!-- Toggle -->
+    
+        <input type="checkbox" class="toggle"><i class="toggle-bg"></i>
+        <input type="checkbox" class="toggle" checked><i class="toggle-bg"></i>
 
-			$('[placeholder]').parents('form').submit(function() {
-				$(this).find('[placeholder]').each(function() {
-					var input = $(this);
-						if (input.val() == input.attr('placeholder')) {
-						input.val('');
-					}
-				})
-			});
-		}
-		
-	});
-	</script>
-	
+    </section>
+    
+    <section><!-- Text Fields -->
+    
+        <input type="text" placeholder="Text Field">
+
+        <br>
+        
+        <input type="search" placeholder="Search">
+
+        <br>
+
+        <input type="password" placeholder="Password">
+
+        <br>
+        
+        <textarea placeholder="Textarea"></textarea>
+    
+    </section>
+    
+    <ul class="icons"><!-- Icons -->
+    
+        <li><span class="icon-e">.icon-e</span></li>
+        <li><span class="icon-right">.icon-right</span></li>
+        <li><span class="icon-down">.icon-down</span></li>
+        <li><span class="icon-hardright">.icon-hardright</span></li>
+        <li><span class="icon-harddown">.icon-harddown</span></li>
+        <li><span class="icon-left">.icon-left</span></li>
+        <li><span class="icon-hardleft">.icon-hardleft</span></li>
+        <li><span class="icon-up">.icon-up</span></li>
+        <li><span class="icon-hardup">.icon-hardup</span></li>
+        <li><span class="icon-home">.icon-home</span></li>
+        <li><span class="icon-docleft">.icon-docleft</span></li>
+        <li><span class="icon-docright">.icon-docright</span></li>
+        <li><span class="icon-closeleft">.icon-closeleft</span></li>
+        <li><span class="icon-closeright">.icon-closeright</span></li>
+        <li><span class="icon-minus">.icon-minus</span></li>
+        <li><span class="icon-check">.icon-check</span></li>
+        <li><span class="icon-error">.icon-error</span></li>
+        <li><span class="icon-gear">.icon-gear</span></li>
+        <li><span class="icon-docs">.icon-docs</span></li>
+        <li><span class="icon-download">.icon-download</span></li>
+        <li><span class="icon-movie">.icon-movie</span></li>
+        <li><span class="icon-hdd">.icon-hdd</span></li>
+        <li><span class="icon-search">.icon-search</span></li>
+        <li><span class="icon-circle">.icon-circle</span></li>
+        <li><span class="icon-close">.icon-close</span></li>
+        <li><span class="icon-print">.icon-print</span></li>
+        <li><span class="icon-doccopy">.icon-doccopy</span></li>
+        <li><span class="icon-bluetooth">.icon-bluetooth</span></li>
+        <li><span class="icon-bullet">.icon-bullet</span></li>
+        <li><span class="icon-star">.icon-star</span></li>
+        <li><span class="icon-plus">.icon-plus</span></li>
+        <li><span class="icon-power">.icon-power</span></li>
+        <li><span class="icon-refresh">.icon-refresh</span></li>
+        <li><span class="icon-music">.icon-music</span></li>
+        <li><span class="icon-globe">.icon-globe</span></li>
+        <li><span class="icon-info">.icon-info</span></li>
+        <li><span class="icon-adduser">.icon-adduser</span></li>
+        <li><span class="icon-user">.icon-user</span></li>
+        <li><span class="icon-secure">.icon-secure</span></li>
+        <li><span class="icon-unsecure">.icon-unsecure</span></li>
+        <li><span class="icon-lock">.icon-lock</span></li>
+        <li><span class="icon-unlock">.icon-unlock</span></li>
+        <li><span class="icon-settings">.icon-settings</span></li>
+        <li><span class="icon-play">.icon-play</span></li>
+        <li><span class="icon-pause">.icon-pause</span></li>
+        <li><span class="icon-forward">.icon-forward</span></li>
+        <li><span class="icon-rewind">.icon-rewind</span></li>
+        <li><span class="icon-eject">.icon-eject</span></li>
+        <li><span class="icon-skip">.icon-skip</span></li>
+        <li><span class="icon-shuffle">.icon-shuffle</span></li>
+        <li><span class="icon-repeat">.icon-repeat</span></li>
+        <li><span class="icon-repeatone">.icon-repeatone</span></li>
+        <li><span class="icon-returnleft">.icon-returnleft</span></li>
+        <li><span class="icon-returnright">.icon-returnright</span></li>
+        <li><span class="icon-largefont">.icon-largefont</span></li>
+        <li><span class="icon-smallfont">.icon-smallfont</span></li>
+        <li><span class="icon-camera">.icon-camera</span></li>
+        <li><span class="icon-video">.icon-video</span></li>
+        <li><span class="icon-mic">.icon-mic</span></li>
+        <li><span class="icon-micremove">.icon-micremove</span></li>
+        <li><span class="icon-micone">.icon-micone</span></li>
+        <li><span class="icon-mictwo">.icon-mictwo</span></li>
+        <li><span class="icon-micthree">.icon-micthree</span></li>
+        <li><span class="icon-soundoff">.icon-soundoff</span></li>
+        <li><span class="icon-soundlow">.icon-soundlow</span></li>
+        <li><span class="icon-soundmed">.icon-soundmed</span></li>
+        <li><span class="icon-soundhi">.icon-soundmax</span></li>
+        <li><span class="icon-wifioff">.icon-wifioff</span></li>
+        <li><span class="icon-wifilow">.icon-wifilow</span></li>
+        <li><span class="icon-wifimed">.icon-wifimed</span></li>
+        <li><span class="icon-wifihi">.icon-wifihi</span></li>
+        <li><span class="icon-wifimax">.icon-wifimax</span></li>
+        <li><span class="icon-col">.icon-col</span></li>
+        <li><span class="icon-carousel">.icon-carousel</span></li>
+        <li><span class="icon-list">.icon-list</span></li>
+        <li><span class="icon-listicons">.icon-listicons</span></li>
+        <li><span class="icon-grid">.icon-grid</span></li>
+        <li><span class="icon-details">.icon-details</span></li>
+        
+    </ul>
+
 </body>
+</html>
