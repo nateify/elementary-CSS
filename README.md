@@ -6,7 +6,7 @@ For more elemtnaryOS UI, you can view the [#elementaryOS](http://elementaryos.de
 
 ## Usage
 
-**[Live Demo](http://nateify.github.com/elementaryOS-UI/)**
+**[Live Demo](http://nateify.github.com/elementary-CSS/)**
 
 ## Browser Support
 
