@@ -265,6 +265,8 @@ input.toggle:checked + .toggle-bg {
 }
 
 /* Text Fields */
+input { outline: none }
+
 #{$all-text-inputs}, textarea {
     @include appearance(textfield);
     border: 1px solid #8e8e8e;
@@ -275,13 +277,11 @@ input.toggle:checked + .toggle-bg {
     font-family: $Sans;
     margin: 0;
     padding: 7px;
-    
+}
+
+input[placeholder] {
     @include placeholder {
         color: #b0b0b0;
-    }
-    
-    &:focus {
-        outline: none;
     }
 }
 
