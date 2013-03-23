@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>elementary CSS</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono" type="text/css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">    <title>elementary CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <!--[if lt IE 9]>
         <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
@@ -14,7 +13,11 @@
 
 <body>
 
-    <section><!-- Headings -->
+    <h1 class="logo"><img src="img/e.png">elementary CSS</h1>
+	
+    <h5 class="h-section">Headings</h5>
+    
+    <section>
     
         <h1>h1. Heading 1</h1>
         <h2>h2. Heading 2</h2>
@@ -25,13 +28,17 @@
         
     </section>
     
-    <section><!-- Paragraphs -->
+    <h5 class="h-section">Paragraphs</h5>
     
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend iaculis velit eu aliquet. Donec nibh mi, accumsan ut tempor vitae, bibendum sit amet ligula. Aenean fermentum pharetra adipiscing. Nam eget nisl eros. Duis cursus porttitor urna, sit amet consequat neque porttitor a. Vivamus vel odio ut lorem aliquet facilisis. Praesent tincidunt dignissim varius. Suspendisse lobortis fermentum libero eget imperdiet. Suspendisse lobortis ante mollis dolor tristique lacinia. Vivamus porta libero sed felis suscipit bibendum. Nam vulputate suscipit viverra. Pellentesque facilisis, lectus ac consectetur mattis, urna libero sagittis lectus, et porta lectus ligula et orci. Maecenas vulputate, turpis eget porttitor ullamcorper, felis massa molestie arcu, a molestie erat tellus nec nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Donec eleifend mi arcu, ac placerat leo.</p>        
+    <section>
+    
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend iaculis velit eu aliquet. Donec nibh mi, accumsan ut tempor vitae, bibendum sit amet ligula. Aenean fermentum pharetra adipiscing. Nam eget nisl eros. Duis cursus porttitor urna, sit amet consequat neque porttitor a. Vivamus vel odio ut lorem aliquet facilisis. Praesent tincidunt dignissim varius. Suspendisse lobortis fermentum libero eget imperdiet. Suspendisse lobortis ante mollis dolor tristique lacinia. Vivamus porta libero sed felis suscipit bibendum. Nam vulputate suscipit viverra. Pellentesque facilisis, lectus ac consectetur mattis, urna libero sagittis lectus, et porta lectus ligula et orci. Maecenas vulputate, turpis eget porttitor ullamcorper, felis massa molestie arcu, a molestie erat tellus nec nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Donec eleifend mi arcu, ac placerat leo.</p>
         
     </section>
     
-    <section><!-- Blockquotes -->
+    <h5 class="h-section">Blockquotes</h5>
+    
+    <section>
     
         <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -39,84 +46,137 @@
         </blockquote>
         
     </section>
+	
+	<h5 class="h-section">Miscellaneous HTML</h5>
+	
+	<section>
+	
+		<p>An <a href="#">anchor tag</a>, <strong>bold</strong> and <em>italic</em> styles, and <ins>inserted</ins> and <del>deleted</del> test. Also, <abbr title="abbreviation">abbr.</abbr> and <acronym title="Acronym">acronym</acronym>. Lastly, <code>code</code>, super<sup>script</sup> and sub<sub>script</sub></p>
+	
+	</section>
+	
+	<h5 class="h-section">Navigation</h5>
+	
+	<section>
+	
+		<nav>
+			<li><a href="#">Discover</a></li>
+			<li><a href="#">Journal</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Developer</a></li>
+		</nav>
+	
+	</section>
+	
+    <h5 class="h-section">Buttons</h5>
     
-    <section><!-- Buttons -->
-        
+    <section>
+                
         <section>
             <a href="#" class="btn">Anchor</a> <button class="btn">Button</button> <input type="button" class="btn" value="Input">
         </section>
-                
+        
+		<hr>
+		
         <section>
             <button class="btn btn-large">Large Button</button>
         </section>
-                
+        
+		<hr>
+		
         <section>
             <button class="btn btn-blue">Blue</button> <button class="btn btn-red">Red</button> <button class="btn btn-black">Black</button>
+        </section>
+
+		<hr>
+			
+        <section>
+            <button class="btn btn-large btn-blue">Large Blue Button</button>
         </section>
         
     </section>
     
-    <section><!-- Radio and Checkbox -->
+    <h5 class="h-section">Radio and Checkbox</h5>
+    
+    <section>
     
         <label for="r1">Radio Button</label>
-        <input type="radio" id="r1" name="r"><i class="radio-bg"></i>
+        <input type="radio" id="r1" name="r"><span></span>
         
         <br>
         
         <label for="r2">Radio Button</label>
-        <input type="radio" id="r2" name="r" checked><i class="radio-bg"></i>
+        <input type="radio" id="r2" name="r" checked><span></span>
 
         <br>
         
         <label for="radio-3">Radio Button</label>
-        <input type="radio" id="r3" name="r"><i class="radio-bg"></i>
+        <input type="radio" id="r3" name="r"><span></span>
     
         <br>
     
         <label for="c1">Checkbox</label>
-        <input type="checkbox" id="c1" checked><i class="check-bg"></i>
+        <input type="checkbox" id="c1" checked><span></span>
 
         <br>
 
         <label for="c2">Checkbox</label>
-        <input type="checkbox" id="c2"><i class="check-bg"></i>
+        <input type="checkbox" id="c2"><span></span>
 
         <br>
 
         <label for="c3">Checkbox</label>
-        <input type="checkbox" id="c3" checked><i class="check-bg"></i>
+        <input type="checkbox" id="c3" checked><span></span>
         
-        
+    </section>
+    
+    <h5 class="h-section">Toggles</h5>
+    
+    <section>
+    
+        <a class="toggle"></a>
+		
+		<br>
+		
+		<a class="toggle on"></a>
+
+    </section>
+	
+	<h5 class="h-section">Slider and Progress</h5>
+	
+	<section>
+	
+		<div class="slider"></div>
+		
+		<br>
+		
+		<div class="progress"></div>
+	
+	</section>
+    
+    <h5 class="h-section">Text Fields</h5>
+    
+    <section>
+    
+		<input type="text" placeholder="Text Field">
+
+		<br>
+		
+		<input type="search" placeholder="Search">
+
+		<br>
+
+		<input type="password" placeholder="Password">
+
+		<br>
+		
+		<textarea placeholder="Textarea"></textarea>
     
     </section>
     
-    <section><!-- Toggle -->
+    <h5 class="h-section">Icons</h5>
     
-        <input type="checkbox" class="toggle"><i class="toggle-bg"></i>
-        <input type="checkbox" class="toggle" checked><i class="toggle-bg"></i>
-
-    </section>
-    
-    <section><!-- Text Fields -->
-    
-        <input type="text" placeholder="Text Field">
-
-        <br>
-        
-        <input type="search" placeholder="Search">
-
-        <br>
-
-        <input type="password" placeholder="Password">
-
-        <br>
-        
-        <textarea placeholder="Textarea"></textarea>
-    
-    </section>
-    
-    <ul class="icons"><!-- Icons -->
-    
+    <ul class="icons">
         <li><span class="icon-e">.icon-e</span></li>
         <li><span class="icon-right">.icon-right</span></li>
         <li><span class="icon-down">.icon-down</span></li>
@@ -195,8 +255,11 @@
         <li><span class="icon-listicons">.icon-listicons</span></li>
         <li><span class="icon-grid">.icon-grid</span></li>
         <li><span class="icon-details">.icon-details</span></li>
-        
     </ul>
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>$(function(){$(".toggle").click(function(){$(this).toggleClass("on")});$(".slider").slider({orientation:"horizontal",range:"min",value:66});$(".progress").progressbar({value:33})});</script>
+	
 </body>
 </html>

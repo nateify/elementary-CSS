@@ -27,11 +27,8 @@
   }
 
   background-color: $fallback-color;
-  background-image: deprecated-webkit-gradient(linear, $deprecated-pos1, $deprecated-pos2, $full); // Safari <= 5.0
   background-image:  -webkit-linear-gradient($pos, $full); // Safari 5.1+, Chrome
-  background-image:     -moz-linear-gradient($pos, $full);
   background-image:      -ms-linear-gradient($pos, $full);
-  background-image:       -o-linear-gradient($pos, $full);
   background-image: unquote("linear-gradient(#{$pos}, #{$full})");
 }
 
