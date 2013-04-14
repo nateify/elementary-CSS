@@ -1,9 +1,8 @@
 body {
-	background: #fff url(../img/bg.png) repeat-x;
-	max-width: 1280px;
-	padding-bottom: 32px;
+    background: #fff;
+    max-width: 1280px;
+    padding-bottom: 32px;
 }
-
 .logo {
     margin-bottom: 45px;
     
@@ -12,31 +11,24 @@ body {
         vertical-align: middle;
     }
 }
-
 .h-section {
     border-top: 1px solid #bfbfbf;
     border-bottom: 4px double #bfbfbf;
     padding: 10px 15px;
     margin: 30px 0;
 }
-
 label { line-height: 2.5 }
-
 a.toggle { margin: 10px 0 }
-
 .slider, .progress { max-width: 250px }
-
 .icons li {
     float: left;
     margin-bottom: 19px;
     width: 25%;
 }
-
 textarea {
     resize: horizontal;
     max-width: 500px;
 }
-
 #{$all-text-inputs}, textarea {
     min-width: 250px;
 }
