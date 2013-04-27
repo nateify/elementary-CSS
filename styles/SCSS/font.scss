@@ -1,0 +1,108 @@
+$fontAwesomePath: "icons" !default;
+
+@font-face {
+	font-family: 'econ';
+	src: url('#{$fontAwesomePath}/econ.eot');
+	src: url('#{$fontAwesomePath}/econ.eot?#iefix') format("embedded-opentype"),
+		url('#{$fontAwesomePath}/econ.woff') format("woff"),
+		url('#{$fontAwesomePath}/econ.ttf') format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+	display: inline-block;
+	font: normal normal normal 19px/normal econ;
+    -webkit-font-smoothing: antialiased;
+	height: auto;
+	margin-top: 0;
+	padding-right: 10px;
+	speak: none;
+	text-decoration: inherit;
+	vertical-align: middle;
+    width: auto;
+}
+
+.icon-elementary:before			{ content: '\0041'; }
+.icon-elementary-invert:before	{ content: '\0042'; }
+.icon-arrow-right:before		{ content: '\0043'; }
+.icon-arrow-down:before			{ content: '\0044'; }
+.icon-arrow-right-hard:before	{ content: '\0045'; }
+.icon-arrow-down-hard:before	{ content: '\0046'; }
+.icon-arrow-left:before			{ content: '\0047'; }
+.icon-arrow-left-hard:before 	{ content: '\0048'; }
+.icon-arrow-up:before			{ content: '\0049'; }
+.icon-arrow-up-hard:before		{ content: '\004A'; }
+.icon-home:before				{ content: '\004B'; }
+.icon-app-left:before			{ content: '\004C'; }
+.icon-app-right:before			{ content: '\004D'; }
+.icon-close-left:before			{ content: '\004E'; }
+.icon-close-right:before		{ content: '\004F'; }
+.icon-minus:before				{ content: '\0050'; }
+.icon-circle-check:before		{ content: '\0051'; }
+.icon-circle-minus:before		{ content: '\0052'; }
+.icon-gear:before				{ content: '\0053'; }
+.icon-documents:before			{ content: '\0054'; }
+.icon-circle-arrow-down:before	{ content: '\0055'; }
+.icon-video:before				{ content: '\0056'; }
+.icon-hard-disk:before			{ content: '\0057'; }
+.icon-search:before				{ content: '\0058'; }
+.icon-redo:before				{ content: '\0059'; }
+.icon-close:before				{ content: '\005A'; }
+.icon-print:before				{ content: '\0061'; }
+.icon-document-copy:before		{ content: '\0062'; }
+.icon-bluetooth:before			{ content: '\0063'; }
+.icon-bullet:before				{ content: '\0064'; }
+.icon-star:before				{ content: '\0065'; }
+.icon-plus:before				{ content: '\0066'; }
+.icon-power:before				{ content: '\0067'; }
+.icon-refresh:before			{ content: '\0068'; }
+.icon-music:before				{ content: '\0069'; }
+.icon-globe:before				{ content: '\006A'; }
+.icon-info:before				{ content: '\006B'; }
+.icon-user-add:before			{ content: '\006C'; }
+.icon-user:before				{ content: '\006D'; }
+.icon-lock:before				{ content: '\006E'; }
+.icon-unlock:before				{ content: '\006F'; }
+.icon-lock-alt:before			{ content: '\0070'; }
+.icon-unlock-alt:before			{ content: '\0071'; }
+.icon-toggles:before			{ content: '\0072'; }
+.icon-play:before				{ content: '\0073'; }
+.icon-pause:before				{ content: '\0074'; }
+.icon-forward:before			{ content: '\0075'; }
+.icon-backward:before			{ content: '\0076'; }
+.icon-eject:before				{ content: '\0077'; }
+.icon-order:before				{ content: '\0078'; }
+.icon-shuffle:before			{ content: '\0079'; }
+.icon-repeat:before				{ content: '\007A'; }
+.icon-repeat-one:before			{ content: '\0031'; }
+.icon-return-left:before		{ content: '\0032'; }
+.icon-return-right:before		{ content: '\0033'; }
+.icon-increase-font:before		{ content: '\0034'; }
+.icon-decrease-font:before		{ content: '\0035'; }
+.icon-camera:before				{ content: '\0038'; }
+.icon-camcorder:before			{ content: '\0039'; }
+.icon-mic:before				{ content: '\0030'; }
+.icon-mic-remove:before			{ content: '\0021'; }
+.icon-mic-one:before			{ content: '\0022'; }
+.icon-mic-two:before			{ content: '\00A3'; }
+.icon-mic-three:before			{ content: '\0025'; }
+.icon-sound-off:before			{ content: '\005E'; }
+.icon-sound-low:before			{ content: '\0026'; }
+.icon-sound-med:before			{ content: '\002A'; }
+.icon-sound-hi:before			{ content: '\0028'; }
+.icon-wifi-off:before			{ content: '\0029'; }
+.icon-wifi-one:before			{ content: '\002D'; }
+.icon-wifi-two:before			{ content: '\005F'; }
+.icon-wifi-three:before			{ content: '\003D'; }
+.icon-wifi-four:before			{ content: '\002B'; }
+.icon-columns:before			{ content: '\005B'; }
+.icon-carousel:before			{ content: '\005D'; }
+.icon-list:before				{ content: '\007B'; }
+.icon-list-icons:before			{ content: '\007D'; }
+.icon-grid:before				{ content: '\003B'; }
+.icon-details:before			{ content: '\003A'; }

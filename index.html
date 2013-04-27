@@ -6,6 +6,7 @@
     <title>elementary CSS</title>
     <meta name="description" content="">
     <meta name="author" content="">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="js/jquery-ui.css">
     <!--[if lt IE 9]>
@@ -67,6 +68,25 @@
             <button class="btn btn-large btn-blue">Large Blue Button</button>
         </section>
     </section>
+	<h5 class="h-section">Infobars</h5>
+	<section>
+		<div class="infobar info">
+			<em>Info</em>
+			<button class="btn btn-clear"><i class="icon-info"></i> Button</button>
+		</div>
+		<div class="infobar question">
+			<em>Question</em>
+			<button class="btn btn-clear"><i class="icon-star"></i> Button</button>
+		</div>
+		<div class="infobar warning">
+			<em>Warning</em>
+			<button class="btn btn-clear"><i class="icon-lock-alt"></i> Button</button>
+		</div>
+		<div class="infobar error">
+			<em>Error</em>
+			<button class="btn btn-clear"><i class="icon-circle-minus"></i> Button</button>
+		</div>
+	</section>
     <h5 class="h-section">Radio and Checkbox</h5>
     <section>
         <label for="r1">Radio Button</label>
@@ -111,33 +131,34 @@
     </section>
     <h5 class="h-section">Icons</h5>
     <ul class="icons">
-        <li><span class="icon-e">.icon-e</span></li>
-        <li><span class="icon-right">.icon-right</span></li>
-        <li><span class="icon-down">.icon-down</span></li>
-        <li><span class="icon-hardright">.icon-hardright</span></li>
-        <li><span class="icon-harddown">.icon-harddown</span></li>
-        <li><span class="icon-left">.icon-left</span></li>
-        <li><span class="icon-hardleft">.icon-hardleft</span></li>
-        <li><span class="icon-up">.icon-up</span></li>
-        <li><span class="icon-hardup">.icon-hardup</span></li>
+        <li><span class="icon-elementary">.icon-elementary</span></li>
+		<li><span class="icon-elementary-invert">.icon-elementary-invert</span></li>
+        <li><span class="icon-arrow-right">.icon-arrow-right</span></li>
+        <li><span class="icon-arrow-down">.icon-arrow-down</span></li>
+        <li><span class="icon-arrow-right-hard">.icon-arrow-right-hard</span></li>
+        <li><span class="icon-arrow-down-hard">.icon-arrow-down-hard</span></li>
+        <li><span class="icon-arrow-left">.icon-arrow-left</span></li>
+        <li><span class="icon-arrow-left-hard">.icon-arrow-left-hard</span></li>
+        <li><span class="icon-arrow-up">.icon-arrow-up</span></li>
+        <li><span class="icon-arrow-up-hard">.icon-arrow-up-hard</span></li>
         <li><span class="icon-home">.icon-home</span></li>
-        <li><span class="icon-docleft">.icon-docleft</span></li>
-        <li><span class="icon-docright">.icon-docright</span></li>
-        <li><span class="icon-closeleft">.icon-closeleft</span></li>
-        <li><span class="icon-closeright">.icon-closeright</span></li>
+        <li><span class="icon-app-left">.icon-app-left</span></li>
+        <li><span class="icon-app-right">.icon-app-right</span></li>
+        <li><span class="icon-close-left">.icon-close-left</span></li>
+        <li><span class="icon-close-right">.icon-close-right</span></li>
         <li><span class="icon-minus">.icon-minus</span></li>
-        <li><span class="icon-check">.icon-check</span></li>
-        <li><span class="icon-error">.icon-error</span></li>
+        <li><span class="icon-circle-check">.icon-circle-check</span></li>
+        <li><span class="icon-circle-minus">.icon-circle-minus</span></li>
         <li><span class="icon-gear">.icon-gear</span></li>
-        <li><span class="icon-docs">.icon-docs</span></li>
-        <li><span class="icon-download">.icon-download</span></li>
-        <li><span class="icon-movie">.icon-movie</span></li>
-        <li><span class="icon-hdd">.icon-hdd</span></li>
+        <li><span class="icon-documents">.icon-documents</span></li>
+        <li><span class="icon-circle-arrow-down">.icon-circle-arrow-down</span></li>
+        <li><span class="icon-video">.icon-video</span></li>
+        <li><span class="icon-hard-disk">.icon-hard-disk</span></li>
         <li><span class="icon-search">.icon-search</span></li>
-        <li><span class="icon-circle">.icon-circle</span></li>
+        <li><span class="icon-redo">.icon-redo</span></li>
         <li><span class="icon-close">.icon-close</span></li>
         <li><span class="icon-print">.icon-print</span></li>
-        <li><span class="icon-doccopy">.icon-doccopy</span></li>
+        <li><span class="icon-document-copy">.icon-document-copy</span></li>
         <li><span class="icon-bluetooth">.icon-bluetooth</span></li>
         <li><span class="icon-bullet">.icon-bullet</span></li>
         <li><span class="icon-star">.icon-star</span></li>
@@ -147,46 +168,46 @@
         <li><span class="icon-music">.icon-music</span></li>
         <li><span class="icon-globe">.icon-globe</span></li>
         <li><span class="icon-info">.icon-info</span></li>
-        <li><span class="icon-adduser">.icon-adduser</span></li>
+        <li><span class="icon-user-add">.icon-user-add</span></li>
         <li><span class="icon-user">.icon-user</span></li>
-        <li><span class="icon-secure">.icon-secure</span></li>
-        <li><span class="icon-unsecure">.icon-unsecure</span></li>
         <li><span class="icon-lock">.icon-lock</span></li>
         <li><span class="icon-unlock">.icon-unlock</span></li>
-        <li><span class="icon-settings">.icon-settings</span></li>
+        <li><span class="icon-lock-alt">.icon-lock-alt</span></li>
+        <li><span class="icon-unlock-alt">.icon-unlock-alt</span></li>
+        <li><span class="icon-toggles">.icon-toggles</span></li>
         <li><span class="icon-play">.icon-play</span></li>
         <li><span class="icon-pause">.icon-pause</span></li>
         <li><span class="icon-forward">.icon-forward</span></li>
-        <li><span class="icon-rewind">.icon-rewind</span></li>
+        <li><span class="icon-backward">.icon-backward</span></li>
         <li><span class="icon-eject">.icon-eject</span></li>
-        <li><span class="icon-skip">.icon-skip</span></li>
+        <li><span class="icon-order">.icon-order</span></li>
         <li><span class="icon-shuffle">.icon-shuffle</span></li>
         <li><span class="icon-repeat">.icon-repeat</span></li>
-        <li><span class="icon-repeatone">.icon-repeatone</span></li>
-        <li><span class="icon-returnleft">.icon-returnleft</span></li>
-        <li><span class="icon-returnright">.icon-returnright</span></li>
-        <li><span class="icon-largefont">.icon-largefont</span></li>
-        <li><span class="icon-smallfont">.icon-smallfont</span></li>
+        <li><span class="icon-repeat-one">.icon-repeat-one</span></li>
+        <li><span class="icon-return-left">.icon-return-left</span></li>
+        <li><span class="icon-return-right">.icon-return-right</span></li>
+        <li><span class="icon-increase-font">.icon-increase-font</span></li>
+        <li><span class="icon-decrease-font">.icon-decrease-font</span></li>
         <li><span class="icon-camera">.icon-camera</span></li>
-        <li><span class="icon-video">.icon-video</span></li>
+        <li><span class="icon-camcorder">.icon-camcorder</span></li>
         <li><span class="icon-mic">.icon-mic</span></li>
-        <li><span class="icon-micremove">.icon-micremove</span></li>
-        <li><span class="icon-micone">.icon-micone</span></li>
-        <li><span class="icon-mictwo">.icon-mictwo</span></li>
-        <li><span class="icon-micthree">.icon-micthree</span></li>
-        <li><span class="icon-soundoff">.icon-soundoff</span></li>
-        <li><span class="icon-soundlow">.icon-soundlow</span></li>
-        <li><span class="icon-soundmed">.icon-soundmed</span></li>
-        <li><span class="icon-soundhi">.icon-soundmax</span></li>
-        <li><span class="icon-wifioff">.icon-wifioff</span></li>
-        <li><span class="icon-wifilow">.icon-wifilow</span></li>
-        <li><span class="icon-wifimed">.icon-wifimed</span></li>
-        <li><span class="icon-wifihi">.icon-wifihi</span></li>
-        <li><span class="icon-wifimax">.icon-wifimax</span></li>
-        <li><span class="icon-col">.icon-col</span></li>
+        <li><span class="icon-mic-remove">.icon-mic-remove</span></li>
+        <li><span class="icon-mic-one">.icon-mic-one</span></li>
+        <li><span class="icon-mic-two">.icon-mic-two</span></li>
+        <li><span class="icon-mic-three">.icon-mic-three</span></li>
+        <li><span class="icon-sound-off">.icon-sound-off</span></li>
+        <li><span class="icon-sound-low">.icon-sound-low</span></li>
+        <li><span class="icon-sound-med">.icon-sound-med</span></li>
+        <li><span class="icon-sound-hi">.icon-sound-hi</span></li>
+        <li><span class="icon-wifi-off">.icon-wifi-off</span></li>
+        <li><span class="icon-wifi-one">.icon-wifi-one</span></li>
+        <li><span class="icon-wifi-two">.icon-wifi-two</span></li>
+        <li><span class="icon-wifi-three">.icon-wifi-three</span></li>
+        <li><span class="icon-wifi-four">.icon-wifi-four</span></li>
+        <li><span class="icon-columns">.icon-columns</span></li>
         <li><span class="icon-carousel">.icon-carousel</span></li>
         <li><span class="icon-list">.icon-list</span></li>
-        <li><span class="icon-listicons">.icon-listicons</span></li>
+        <li><span class="icon-list-icons">.icon-list-icons</span></li>
         <li><span class="icon-grid">.icon-grid</span></li>
         <li><span class="icon-details">.icon-details</span></li>
     </ul>
