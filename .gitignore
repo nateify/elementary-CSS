@@ -1,4 +1,11 @@
-.sass-cache/
-Thumbs.db
-Desktop.ini
+# Always ignore
+*.diff
+*.log
 *.psd
+*~
+*.sass-cache
+
+# OS Files
+.DS_Store
+._*
+Thumbs.db
