@@ -35,8 +35,8 @@ hr {
 /* Icon Font */
 @font-face {
     font-family: 'econ';
-    src: url("icons/econ.eot");
-    src: url("icons/econ.eot?#iefix") format("embedded-opentype"),url("icons/econ.woff") format("woff"),url("icons/econ.ttf") format("truetype");
+    src: url("../font/econ.eot");
+    src: url("../font/econ.eot?#iefix") format("embedded-opentype"),url("../font/econ.woff") format("woff"),url("../font/econ.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
