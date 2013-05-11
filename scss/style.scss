@@ -2,13 +2,13 @@
 @import 'bourbon/bourbon';
 
 /* Variables */
-$baseFontSize:		16px;
-$baseLineHeight:	5/3;
-$baseHeading:		40px;
-$sans:				'Droid Sans', Verdana, Geneva, sans-serif;
-$mono:				'Droid Sans Mono', Consolas, Courier, monospace;
-$serif:				'Droid Serif', Cambria, "Times New Roman", Times, serif;
-$radius:			3px;
+$baseFontSize:      16px;
+$baseLineHeight:    5/3;
+$baseHeading:       40px;
+$sans:              'Droid Sans', Verdana, Geneva, sans-serif;
+$mono:              'Droid Sans Mono', Consolas, Courier, monospace;
+$serif:             'Droid Serif', Cambria, "Times New Roman", Times, serif;
+$radius:            3px;
 
 /* Imports */
 @import 'reset';
@@ -137,8 +137,8 @@ nav {
         border-left: 1px solid #fff;
         color: #636363 !important;
         padding: 16px 24px;
-		
-		&:hover { background-color: rgba(0,0,0,0.025); }
+        
+        &:hover { background-color: rgba(0,0,0,0.025); }
     }
 }
 
@@ -217,52 +217,52 @@ a.btn { padding: 7px 18px }
 
 /* Infobars */
 .infobar {
-	border-radius: $radius;
-	@include box-sizing(border-box);
-	box-shadow: 0 -1px 0 0 rgba(255,255,255,0.3);
-	height: 48px;
-	margin: 10px 0;
-	padding: 6px 10px 0 14px;
-	
-	em {
-		color: rgba(0, 0, 0, 0.8);
-		font-size: 14px;
-		font-style: normal;
-		padding-top: 10px;
-		float: left;
-	}
-	.btn {
-		background: transparent;
-		border: 1px solid rgba(0,0,0,0.3);
-		box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.3), 0 1px 0 0 rgba(255,255,255,0.15);
-		color: rgba(0, 0, 0, 0.8);
-		float: right;
-		text-shadow: 0 1px 0 rgba(255,255,255,0.3);
-		
-		&:active { box-shadow: inset 0 -1px 0 0 rgba(255,255,255,0.3); }
-	}
-	
-	&.info {
-		@include linear-gradient(top, #fff, #f3f3f3);
-		border: 1px solid #9f9f9f;
-	}
-	
-	&.question {
-		@include linear-gradient(top, #55c1ec, #44a2e9);
-		border: 1px solid #357893;
-	}
-	
-	&.warning {
-		@include linear-gradient(top, #fdde76, #fbd058);
-		border: 1px solid #9e8a4a;
-	}
-	
-	&.error {
-		@include linear-gradient(top, #e35d4f, #d33f3d);
-		border: 1px solid #8e3a31;
-	}
-	
-	i[class^="icon"] { color: rgba(0, 0, 0, 0.6); }
+    border-radius: $radius;
+    @include box-sizing(border-box);
+    box-shadow: 0 -1px 0 0 rgba(255,255,255,0.3);
+    height: 48px;
+    margin: 10px 0;
+    padding: 6px 10px 0 14px;
+    
+    em {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+        font-style: normal;
+        padding-top: 10px;
+        float: left;
+    }
+    .btn {
+        background: transparent;
+        border: 1px solid rgba(0,0,0,0.3);
+        box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.3), 0 1px 0 0 rgba(255,255,255,0.15);
+        color: rgba(0, 0, 0, 0.8);
+        float: right;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+        
+        &:active { box-shadow: inset 0 -1px 0 0 rgba(255,255,255,0.3); }
+    }
+    
+    &.info {
+        @include linear-gradient(top, #fff, #f3f3f3);
+        border: 1px solid #9f9f9f;
+    }
+    
+    &.question {
+        @include linear-gradient(top, #55c1ec, #44a2e9);
+        border: 1px solid #357893;
+    }
+    
+    &.warning {
+        @include linear-gradient(top, #fdde76, #fbd058);
+        border: 1px solid #9e8a4a;
+    }
+    
+    &.error {
+        @include linear-gradient(top, #e35d4f, #d33f3d);
+        border: 1px solid #8e3a31;
+    }
+    
+    i[class^="icon"] { color: rgba(0, 0, 0, 0.6); }
 }
 
 /* Form Elements */
@@ -311,8 +311,8 @@ input[type='radio']:checked + span {
 
 .toggle.on {
     background-position: 24px 0;
-	border-right: 0;
-	border-left: 1px solid #266da4;
+    border-right: 0;
+    border-left: 1px solid #266da4;
 }
 
 /* Slider */
