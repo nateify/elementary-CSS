@@ -153,7 +153,7 @@ nav {
     cursor: pointer;
     display: inline-block;
     font-family: $sans;
-    font-size: $baseFontSize * (7/8);
+    font-size: $baseFontSize;
     padding: 6px 18px;
     margin-bottom: 0;
     text-decoration: none;
@@ -174,7 +174,7 @@ nav {
 a.btn { padding: 7px 18px }
 
 .btn-large {
-    font-size: $baseFontSize * (3/2);
+    font-size: $baseFontSize * 2;
     padding: 9px 27px;
 }
 
@@ -349,6 +349,7 @@ input[type='radio']:checked + span {
     .ui-progressbar-value {
         @include linear-gradient(top, #515151, #878787);
         border-right: 1px solid #424242;
+        margin: 0;
     }
 }
 
@@ -378,16 +379,7 @@ textarea {
 }
 
 input[type='search'] {
-    background-position: 7px 7px;
-    background-repeat: no-repeat;
-    padding-left: 28px;
-}
-
-input[type='search'] + i.icon-search {
-    left: -215px;
-    margin-left: -29px;
-    position: relative;
-    top: 4px;
+    @include appearance(search);
 }
 
 /* High DPI Displays */
