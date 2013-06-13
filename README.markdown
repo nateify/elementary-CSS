@@ -14,7 +14,7 @@ Documentation is available on the [GitHub Wiki](https://github.com/nateify/eleme
 
 * Google Chrome
 * Internet Explorer 10+
-* Mozilla Firefox 4+
+* Mozilla Firefox
 * Opera 12+
 * Safari 5+
 
@@ -22,7 +22,7 @@ Documentation is available on the [GitHub Wiki](https://github.com/nateify/eleme
 
 **elementary CSS is licensed by Nate Cohen under the [MIT License](http://opensource.org/licenses/MIT)**
 
-[elementary icons](https://code.launchpad.net/elementaryicons) are liscensed by [Daniel Foré](http://danrabbit.deviantart.com/) under the [GPLv2](http://www.gnu.org/licenses/gpl-2.0.txt)
+[elementary Icons](http://danrabbit.deviantart.com/art/elementary-Icons-65437279) are liscensed by [Daniel Foré](http://danrabbit.deviantart.com/) under the [GPL](http://www.gnu.org/licenses/gpl-3.0.txt)
 
 [Bourbon](https://github.com/thoughtbot/bourbon) is liscensed by [thoughtbot, inc.](http://www.thoughtbot.com/community) under the [MIT License](http://opensource.org/licenses/MIT)
 
