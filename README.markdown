@@ -1,4 +1,4 @@
-# elementary CSS [![Build Status](https://secure.travis-ci.org/nateify/elementary-CSS.png)](http://travis-ci.org/nateify/elementary-CSS)
+# elementary CSS
 
 elementary CSS is a front-end framework based on the design of [elementary](http://elementaryos.org/), a free and open source OS built on [Ubuntu](http://www.ubuntu.com/).
 
@@ -27,6 +27,3 @@ Documentation is available on the [GitHub Wiki](https://github.com/nateify/eleme
 [Bourbon](https://github.com/thoughtbot/bourbon) is liscensed by [thoughtbot, inc.](http://www.thoughtbot.com/community) under the [MIT License](http://opensource.org/licenses/MIT)
 
 [YUI Compressor](https://github.com/yui/yuicompressor) is liscensed by Yahoo! Inc. under the [BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause)
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nateify/elementary-css/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
