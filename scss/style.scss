@@ -106,6 +106,7 @@ kbd {
   font-family: $sans;
   font-size: $baseFontSize;
   padding: 5px 10px;
+  @include user-select(none);
 }
 
 pre {
@@ -180,6 +181,7 @@ nav {
     margin-bottom: 0;
     text-decoration: none;
     vertical-align: baseline;
+	@include user-select(none);
     
     &::-moz-focus-inner { /* Fix for Firefox */
         border: 0;
@@ -233,7 +235,7 @@ a.btn { padding: 7px 18px }
 
 [disabled], .disabled{
     cursor: not-allowed;
-    opacity: 0.6;
+    opacity: 0.66;
     pointer-events: none;
     @include user-select(none);
 }
@@ -348,6 +350,9 @@ input[type='radio']:checked + span {
     .ui-slider-range-min {
         @include linear-gradient(top, #535353, #808080);
         border: 1px solid #424242;
+		border-radius: $radius;
+		top: -1px;
+		left: -1px;
     }
     
     .ui-slider-handle {
