@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+
+body {
+    background: #fff;
+    max-width: 1280px;
+	margin: 0 auto;
+    padding: 0 20px 20px;
+}
+
+h1.logo img {
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+h1.styleguide {
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 4px double #bfbfbf;
+	font-size: 32px;
+    padding: 10px 15px;
+}
+
+h2.styleguide { font-size: 28px; }
+h3.styleguide { font-size: 24px; }
+
+p.styleguide { font-size: 80%; }
+
+.infobar { width: 360px }
+
+label { line-height: 2.5 }
+
+a.toggle { margin: 10px 0 }
+
+.slider, .progress { max-width: 250px }
+
+.icons {
+padding: 0;
+margin: 0;
+}
+
+.icons li {
+    float: left;
+    margin-bottom: 22px;
+    width: 25%;
+	list-style: none;
+}
+
+textarea {
+    resize: horizontal;
+    max-width: 500px;
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea { min-width: 250px }
+
+hr {
+    background-color: #000;
+    background-image: -webkit-linear-gradient(left, #fff, rgba(0, 0, 0, 0.75), #fff);
+    background-image: linear-gradient(to right,#fff, rgba(0, 0, 0, 0.75), #fff);
+    border: 0;
+    height: 1px;
+    margin: 32px 0;
+}

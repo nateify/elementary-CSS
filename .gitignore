@@ -1,11 +1,8 @@
-# Always ignore
-*.diff
+*~
+._*
 *.log
 *.psd
-*~
-*.sass-cache
-
-# OS Files
+*.diff
 .DS_Store
-._*
 Thumbs.db
+*.sass-cache

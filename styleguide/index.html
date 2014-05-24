@@ -4,45 +4,133 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>elementary CSS</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--[if lt IE 9]>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../framework/css/elementary.css">
+	<link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <h1 class="logo"><img src="img/e.svg" width="64" height="64">elementary CSS</h1>
-    <h5 class="h-section">Headings</h5>
+
+    <h1 class="logo"><img src="e.svg" width="64" height="64">elementary CSS</h1>
+	
+    <h1 class="styleguide">Typography</h1>
+	
+	<h2 class="styleguide">Headings</h2>
+	<p class="styleguide">All HTML headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are properly styled. Alternatively, you can apply an <code>.h1</code> through <code>.h6</code> class to an inline element to give it the styling of a block heading.</p>
+	
     <section>
-        <h1>h1. Heading 1</h1>
-        <h2>h2. Heading 2</h2>
-        <h3>h3. Heading 3</h3>
-        <h4>h4. Heading 4</h4>
-        <h5>h5. Heading 5</h5>
-        <h6>h6. Heading 6</h6>
+	
+        <h1>h1. elementary heading</h1>
+        <h2>h2. elementary heading</h2>
+        <h3>h3. elementary heading</h3>
+        <h4>h4. elementary heading</h4>
+        <h5>h5. elementary heading</h5>
+        <h6>h6. elementary heading</h6>
+		
+		<pre>
+&lt;h1&gt;h1. elementary heading&lt;/h1&gt;
+&lt;h2&gt;h2. elementary heading&lt;/h2&gt;
+&lt;h3&gt;h3. elementary heading&lt;/h3&gt;
+&lt;h4&gt;h4. elementary heading&lt;/h4&gt;
+&lt;h5&gt;h5. elementary heading&lt;/h5&gt;
+&lt;h6&gt;h6. elementary heading&lt;/h6&gt;		</pre>
+		
     </section>
-    <h5 class="h-section">Paragraphs</h5>
+	
+    <h2 class="styleguide">Body copy</h2>
+	
     <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend iaculis velit eu aliquet. Donec nibh mi, accumsan ut tempor vitae, bibendum sit amet ligula. Aenean fermentum pharetra adipiscing. Nam eget nisl eros. Duis cursus porttitor urna, sit amet consequat neque porttitor a. Vivamus vel odio ut lorem aliquet facilisis. Praesent tincidunt dignissim varius. Suspendisse lobortis fermentum libero eget imperdiet. Suspendisse lobortis ante mollis dolor tristique lacinia. Vivamus porta libero sed felis suscipit bibendum. Nam vulputate suscipit viverra. Pellentesque facilisis, lectus ac consectetur mattis, urna libero sagittis lectus, et porta lectus ligula et orci. Maecenas vulputate, turpis eget porttitor ullamcorper, felis massa molestie arcu, a molestie erat tellus nec nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Donec eleifend mi arcu, ac placerat leo.</p>
+	
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend iaculis velit eu aliquet. Donec nibh mi, accumsan ut tempor vitae, bibendum sit amet ligula. Aenean fermentum pharetra adipiscing. Nam eget nisl eros. Duis cursus porttitor urna, sit amet consequat neque porttitor a. Vivamus vel odio ut lorem aliquet facilisis. Praesent tincidunt dignissim varius. Suspendisse lobortis fermentum libero eget imperdiet. Suspendisse lobortis ante mollis dolor tristique lacinia. Vivamus porta libero sed felis suscipit bibendum. Nam vulputate suscipit viverra. Pellentesque facilisis, lectus ac consectetur mattis, urna libero sagittis lectus, et porta lectus ligula et orci. Maecenas vulputate, turpis eget porttitor ullamcorper, felis massa molestie arcu, a molestie erat tellus nec nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Donec eleifend mi arcu, ac placerat leo.</p>
+		
+		<pre>&lt;p&gt;. . .&lt;/p&gt;</pre>
+		
     </section>
-    <h5 class="h-section">Blockquotes</h5>
+	
+	<h2 class="styleguide">Miscellaneous elements</h2>
+	
+	<section>
+		
+		<p>
+			<a href="">Anchor</a><br>
+			<abbr title="Abbreviation">abbr.</abbr><br>
+			<del>Deleted</del><br>
+			<ins>Inserted</ins><br>
+			<code>code</code><br>
+			<kbd>Keyboard</kbd><br>
+		</p>
+		
+		<pre>
+&lt;a href=""&gt;Anchor&lt;/a&gt;
+&lt;abbr title="Abbreviation"&gt;abbr.&lt;/abbr&gt;
+&lt;del&gt;Deleted&lt;/del&gt;
+&lt;ins&gt;Inserted&lt;/ins&gt;
+&lt;code&gt;code&lt;/code&gt;
+&lt;kbd&gt;Keyboard&lt;/kbd&gt;    </pre>
+				
+	</section>
+	
+    <h2 class="styleguide">Blockquote</h2>
+	<p class="styleguide">Wrap a <code>&lt;blockquote&gt;</code> around any <code>&lt;p&gt;</code>, and wrap the citation <code>&lt;small&gt;</code>.</p>
+	
     <section>
+	
         <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p>
             <small>Someone famous in Source Title</small>
         </blockquote>
+		
+		<pre>&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante&lt;/p&gt;
+	&lt;small&gt;Someone famous in Source Title&lt;/small&gt;
+&lt;/blockquote&gt;</pre>
+		
     </section>
-    <h5 class="h-section">Miscellaneous HTML</h5>
-    <section>
-        <p>
-            <a href="#">Anchor Tag</a>, <abbr title="Abbreviation">abbr.</abbr>, <strong>bold</strong>, <em>italic</em>, <code>code</code>, <del>deleted</del>, <ins>inserted</ins>, <kbd>Keyboard</kbd>, <sup>sup</sup>er and <sub>sub</sub>script.
-        </p>
-    </section>
+
+	<hr>
+	
+	<h1 class="styleguide">Buttons</h1>
+	
+	<h2 class="styleguide">Default</h2>
+	<p class="styleguide">Add the <code>.btn</code> class to any <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> to create a button.</p>
+	<p class="styleguide"><strong>For compatibilty reasons, it is reccommanded to only use the <code>&lt;a&gt;</code> element for buttons</strong></p>
+	
+	<section>
+		
+		<a href="" class="btn">Anchor</a> <button class="btn">Button</button> <input type="button" class="btn" value="Input">
+		
+		<pre>&lt;a href="" class="btn"&gt;Anchor&lt;/a&gt;
+&lt;button class="btn"&gt;Button&lt;/button&gt;
+&lt;input type="button" class="btn" value="Input"&gt;</pre>
+		
+	</section>
+	
+	<p class="styleguide">For blue, red, black, or light buttons, add <code>.btn-blue</code>, <code>.btn-red</code>, <code>.btn-black</code>, or <code>.btn-light</code> to the class.</p>
+	
+	<section>
+		
+		<a href="" class="btn btn-blue">Blue Button</a>
+	
+	</section>
+	
+	<h2 class="styleguide">Large</h2>
+	
+	<section>
+	
+		<a href="" class="btn btn-large">Large Button</a>
+	
+	</section>
+	
+	<h2 class="styleguide">Toggable</h2>
+	
+	<h2 class="styleguide">Active</h2>
+	
+	<h2 class="styleguide">Disabled</h2>
+	
+	
+	
+	<!--
+	
     <h5 class="h-section">Navigation</h5>
     <section>
         <nav>
@@ -55,7 +143,7 @@
     <h5 class="h-section">Buttons</h5>
     <section>
         <section>
-            <a href="" class="btn">Anchor</a> <button class="btn">Button</button> <input type="button" class="btn" value="Input">
+            
         </section>
         <hr>
         <section>
@@ -226,8 +314,11 @@
         <li><i class="icon-list-compact"></i> icon-list-compact</li>
         <li><i class="icon-list"></i> icon-list</li>
     </ul>
+	
+	-->
+	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="../framework/js/jquery-ui.min.js"></script>
     <script>
     $(function () {
         $(".toggle").click(function () {
