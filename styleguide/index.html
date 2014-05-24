@@ -16,6 +16,7 @@
     <h1 class="styleguide">Typography</h1>
 	
 	<h2 class="styleguide">Headings</h2>
+	
 	<p class="styleguide">All HTML headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are properly styled. Alternatively, you can apply an <code>.h1</code> through <code>.h6</code> class to an inline element to give it the styling of a block heading.</p>
 	
     <section>
@@ -71,6 +72,7 @@
 	</section>
 	
     <h2 class="styleguide">Blockquote</h2>
+	
 	<p class="styleguide">Wrap a <code>&lt;blockquote&gt;</code> around any <code>&lt;p&gt;</code>, and wrap the citation <code>&lt;small&gt;</code>.</p>
 	
     <section>
@@ -92,6 +94,7 @@
 	<h1 class="styleguide">Buttons</h1>
 	
 	<h2 class="styleguide">Default</h2>
+	
 	<p class="styleguide">Add the <code>.btn</code> class to any <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> to create a button.</p>
 	<p class="styleguide"><strong>For compatibilty reasons, it is reccommanded to only use the <code>&lt;a&gt;</code> element for buttons</strong></p>
 	
@@ -105,33 +108,94 @@
 		
 	</section>
 	
-	<p class="styleguide">For blue, red, black, or light buttons, add <code>.btn-blue</code>, <code>.btn-red</code>, <code>.btn-black</code>, or <code>.btn-light</code> to the class.</p>
+	<p class="styleguide">For blue, red, dark, or light buttons, add <code>.btn-blue</code>, <code>.btn-red</code>, <code>.btn-dark</code>, or <code>.btn-light</code> to the class.</p>
 	
 	<section>
 		
-		<a href="" class="btn btn-blue">Blue Button</a>
+		<a href="" class="btn btn-blue">Blue Button</a> <a href="" class="btn btn-red">Red Button</a> <a href="" class="btn btn-dark">Dark Button</a> <a href="" class="btn btn-light">Light Button</a>
+	
+		<pre>&lt;a href="" class="btn btn-blue"&gt;Blue Button&lt;/a&gt;
+&lt;a href="" class="btn btn-red"&gt;Red Button&lt;/a&gt;
+&lt;a href="" class="btn btn-dark"&gt;Dark Button&lt;/a&gt;
+&lt;a href="" class="btn btn-light"&gt;Light Button&lt;/a&gt;</pre>
 	
 	</section>
 	
 	<h2 class="styleguide">Large</h2>
 	
+	<p class="styleguide">Add the <code>.btn-large</code> class to a button to double its size.</p>
+	
 	<section>
 	
-		<a href="" class="btn btn-large">Large Button</a>
+		<a href="" class="btn btn-lg">Large Button</a> <a href="" class="btn btn-blue btn-lg">Large Blue Button</a>
+	
+		<pre>&lt;a href="" class="btn btn-lg"&gt;Large Button&lt;/a&gt;
+&lt;a href="" class="btn btn-blue btn-lg"&gt;Large Blue Button Button&lt;/a&gt;</pre>
 	
 	</section>
 	
-	<h2 class="styleguide">Toggable</h2>
-	
 	<h2 class="styleguide">Active</h2>
+	
+	<p class="styleguide">Add the <code>.active</code> class to a button to keep it pressed.</p>
+	
+	<section>
+	
+		<a href="" class="btn btn-red active">Active Red Button</a>
+		
+		<pre>&lt;a href="" class="btn btn-red active"&gt;Active Red Button&lt;/a&gt;</pre>
+	
+	</section>
 	
 	<h2 class="styleguide">Disabled</h2>
 	
+	<p class="styleguide">Add the <code>.disabled</code> class to a button to generate the disabled style.</p>
+	<p class="styleguide"><strong>The <code>.disabled</code> class can be added to any element to disable clicking or highlighting on supported browsers.</strong></p>
 	
+	<section>
+	
+		<a href="" class="btn btn-red disabled">Disabled Red Button</a> <a href="" class="btn btn-blue active disabled">Disabled Active Blue Button</a>
+		
+		<pre>&lt;a href="" class="btn btn-red disabled"&gt;Disabled Red Button&lt;/a&gt;
+&lt;a href="" class="btn btn-blue active disabled"&gt;Disabled Active Blue Button&lt;/a&gt;</pre>
+	
+	</section>
+	
+	<hr>
+	
+	<h1 class="styleguide">Form Elements</h1>
+	
+	<h2 class="styleguide">Checkboxes</h2>
+	
+	<section>
+		
+		<input type="checkbox" id="c1">
+		<label for="c1">Checkbox</label>
+		
+		<br>
+		
+		<input type="checkbox" id="c2" checked>
+		<label for="c2">Checkbox</label>
+		
+	</section>
+	
+	<h2 class="styleguide">Radios</h2>
+	
+	<section>
+	
+		<input type="radio" id="r1" name="r" checked>
+		<label for="r1">Radio</label>
+		
+		<br>
+		
+		<input type="radio" id="r2" name="r">
+		<label for="r2">Radio</label>
+	
+	</section>
 	
 	<!--
 	
     <h5 class="h-section">Navigation</h5>
+	
     <section>
         <nav>
             <li><a href="">Discover</a></li>
@@ -140,25 +204,9 @@
             <li><a href="">Developer</a></li>
         </nav>
     </section>
-    <h5 class="h-section">Buttons</h5>
-    <section>
-        <section>
-            
-        </section>
-        <hr>
-        <section>
-            <button class="btn btn-large">Large Button</button>
-        </section>
-        <hr>
-        <section>
-            <button class="btn btn-blue">Blue</button> <button class="btn btn-red">Red</button> <button class="btn btn-black">Black</button>
-        </section>
-        <hr>
-        <section>
-            <button class="btn btn-large btn-blue">Large Blue Button</button>
-        </section>
-    </section>
+  
     <h5 class="h-section">Infobars</h5>
+	
     <section>
         <div class="infobar info">
             <em>Info</em>
@@ -177,40 +225,33 @@
             <button class="btn btn-clear"><i class="icon-error"></i> Button</button>
         </div>
     </section>
-    <h5 class="h-section">Radio and Checkbox</h5>
-    <section>
-        <label for="r1">Radio Button</label>
-        <input type="radio" id="r1" name="r"><span></span>
-        <br>
-        <label for="r2">Radio Button</label>
-        <input type="radio" id="r2" name="r" checked><span></span>
-        <br>
-        <label for="radio-3">Radio Button</label>
-        <input type="radio" id="r3" name="r"><span></span>
-        <br>
-        <label for="c1">Checkbox</label>
-        <input type="checkbox" id="c1" checked><span></span>
-        <br>
-        <label for="c2">Checkbox</label>
-        <input type="checkbox" id="c2"><span></span>
-        <br>
-        <label for="c3">Checkbox</label>
-        <input type="checkbox" id="c3" checked><span></span>
-    </section>
+	
+
+	
     <h5 class="h-section">Toggles</h5>
+	
     <section>
+	
         <a class="toggle"></a>
         <br>
         <a class="toggle on"></a>
+		
     </section>
+	
     <h5 class="h-section">Slider and Progress</h5>
+	
     <section>
+	
         <div class="slider"></div>
         <br>
         <div class="progress"></div>
+		
     </section>
+	
     <h5 class="h-section">Text Fields</h5>
+	
     <section>
+	
         <input type="text" placeholder="Text Field">
         <br>
         <input type="search" placeholder="Search">
@@ -218,8 +259,11 @@
         <input type="password" placeholder="Password">
         <br>
         <textarea placeholder="Textarea"></textarea>
+		
     </section>
+	
     <h5 class="h-section">Icons</h5>
+	
     <ul class="icons">
         <li><i class="icon-up"></i> icon-up</li>
         <li><i class="icon-next"></i> icon-next</li>
@@ -319,11 +363,9 @@
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../framework/js/jquery-ui.min.js"></script>
+    <script src="../framework/js/elementary.js"></script>
     <script>
     $(function () {
-        $(".toggle").click(function () {
-            $(this).toggleClass("on")
-        });
         $(".slider").slider({
             orientation: "horizontal",
             range: "min",
