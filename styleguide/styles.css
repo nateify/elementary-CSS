@@ -1,70 +1,44 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:100);
-
 body {
     background: #fff;
     max-width: 1280px;
-	margin: 0 auto;
+    margin: 0 auto;
     padding: 0 20px 20px;
 }
-
-h1.logo img {
+.logo img {
     margin-right: 25px;
     vertical-align: middle;
 }
-
 h1.styleguide {
     border-top: 1px solid #bfbfbf;
     border-bottom: 4px double #bfbfbf;
-	font-size: 32px;
+    font-size: 32px;
     padding: 10px 15px;
 }
-
-h2.styleguide { font-size: 28px; }
-h3.styleguide { font-size: 24px; }
-
-p.styleguide { font-size: 80%; }
-
-.infobar { width: 360px }
-
+h2.styleguide { font-size: 28px }
+h3.styleguide { font-size: 24px }
+p.styleguide { font-size: 80% }
 label { line-height: 2.5 }
-
-.slider, .progress { max-width: 250px }
-
+.slider,
+.progress { max-width: 252px }
 .icons {
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
-
 .icons li {
     float: left;
     margin-bottom: 22px;
     width: 25%;
-	list-style: none;
+    list-style: none;
 }
-
 textarea,
-input[type="tel"],
-input[type="url"],
-input[type="date"],
-input[type="time"],
-input[type="text"],
-input[type="week"],
-input[type="month"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="datetime"],
-input[type="password"],
-input[type="datetime-local"] {
-	min-width: 250px;	
-}
-
+input[type="text"]
+input[type="search"]
+input[type="password"] { min-width: 250px }
 textarea {
     resize: horizontal;
     max-width: 500px;
 }
-
-
 hr {
     background-color: #000;
     background-image: -webkit-linear-gradient(left, #fff, rgba(0, 0, 0, 0.75), #fff);
