@@ -166,6 +166,8 @@
 	
 	<h2 class="styleguide">Checkboxes</h2>
 	
+	<p class="styleguide"><code>jquery.min.js</code> and <code>elementary.js</code> are required for custom checkboxes and radios.</p>
+	
 	<section>
 		
 		<input type="checkbox" id="c1">
@@ -175,6 +177,9 @@
 		
 		<input type="checkbox" id="c2" checked>
 		<label for="c2">Checkbox</label>
+		
+		<pre>&lt;input type="checkbox" id="c1"&gt;
+&lt;label for="c1"&gt;Checkbox&lt;/label&gt;</pre>
 		
 	</section>
 	
@@ -189,6 +194,34 @@
 		
 		<input type="radio" id="r2" name="r">
 		<label for="r2">Radio</label>
+		
+		<pre>&lt;input type="radio" id="r1" name="r"&gt;
+&lt;label for="r1"&gt;Radio&lt;/label&gt;</pre>
+	
+	</section>
+	
+	<h2 class="styleguide">Text Fields</h2>
+	
+	<section>
+	
+		<input type="text" placeholder="Text">
+		
+		<br>
+		
+		<input type="search" placeholder="Search">
+		
+		<br>
+		
+		<input type="password" placeholder="Password">
+		
+		<br>
+		
+		<textarea placeholder="Textarea" rows="3"></textarea>
+		
+		<pre>&lt;input type="text" placeholder="Text"&gt;
+&lt;input type="search" placeholder="Search"&gt;
+&lt;input type="password" placeholder="Password"&gt;
+&lt;textarea placeholder="Textarea" rows="3"&gt;&lt;/textarea&gt;</pre>
 	
 	</section>
 	
@@ -226,17 +259,6 @@
         </div>
     </section>
 	
-
-	
-    <h5 class="h-section">Toggles</h5>
-	
-    <section>
-	
-        <a class="toggle"></a>
-        <br>
-        <a class="toggle on"></a>
-		
-    </section>
 	
     <h5 class="h-section">Slider and Progress</h5>
 	
@@ -248,19 +270,7 @@
 		
     </section>
 	
-    <h5 class="h-section">Text Fields</h5>
-	
-    <section>
-	
-        <input type="text" placeholder="Text Field">
-        <br>
-        <input type="search" placeholder="Search">
-        <br>
-        <input type="password" placeholder="Password">
-        <br>
-        <textarea placeholder="Textarea"></textarea>
-		
-    </section>
+    
 	
     <h5 class="h-section">Icons</h5>
 	
@@ -361,9 +371,10 @@
 	
 	-->
 	
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../framework/js/jquery.min.js"></script>
     <script src="../framework/js/jquery-ui.min.js"></script>
     <script src="../framework/js/elementary.js"></script>
+	
     <script>
     $(function () {
         $(".slider").slider({

@@ -28,8 +28,6 @@ p.styleguide { font-size: 80%; }
 
 label { line-height: 2.5 }
 
-a.toggle { margin: 10px 0 }
-
 .slider, .progress { max-width: 250px }
 
 .icons {
@@ -44,12 +42,28 @@ margin: 0;
 	list-style: none;
 }
 
+textarea,
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="week"],
+input[type="month"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="datetime"],
+input[type="password"],
+input[type="datetime-local"] {
+	min-width: 250px;	
+}
+
 textarea {
     resize: horizontal;
     max-width: 500px;
 }
 
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea { min-width: 250px }
 
 hr {
     background-color: #000;
