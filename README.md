@@ -18,7 +18,7 @@ To use elementary CSS in your project, use the resources found in the `framework
 * Opera 12+
 * Safari 5+
 
-**Functional in IE8+*
+*\*Functional in IE8+*
 
 ## License and Attributions
 
