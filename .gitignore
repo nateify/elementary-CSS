@@ -1,11 +1,22 @@
-# Always ignore
-*.diff
-*.log
-*.psd
 *~
-*.sass-cache
-
-# OS Files
-.DS_Store
 ._*
+*.msi
+*.msm
+*.msp
+*.cab
+.apdisk
+.Trashes
+.AppleDB
+.DS_Store
 Thumbs.db
+.directory
+.LSOverride
+.sass-cache
+ehthumbs.db
+Desktop.ini
+.AppleDouble
+$RECYCLE.BIN/
+.AppleDesktop
+.Spotlight-V100
+Temporary Items
+Network Trash Folder

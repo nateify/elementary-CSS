@@ -4,237 +4,330 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>elementary CSS</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--[if lt IE 9]>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../framework/css/elementary.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <h1 class="logo"><img src="img/e.svg" width="64" height="64">elementary CSS</h1>
-    <h5 class="h-section">Headings</h5>
+    <h1 class="logo"><img src="e.svg" width="64" height="64">elementary CSS</h1>
+    <h1 class="styleguide">Typography</h1>
+    <h2 class="styleguide">Headings</h2>
+    <p class="styleguide">All HTML headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are properly styled. Alternatively, you can apply an <code>.h1</code> through <code>.h6</code> class to an inline element to give it the styling of a block heading.</p>
     <section>
-        <h1>h1. Heading 1</h1>
-        <h2>h2. Heading 2</h2>
-        <h3>h3. Heading 3</h3>
-        <h4>h4. Heading 4</h4>
-        <h5>h5. Heading 5</h5>
-        <h6>h6. Heading 6</h6>
+        <h1>h1. elementary heading</h1>
+        <h2>h2. elementary heading</h2>
+        <h3>h3. elementary heading</h3>
+        <h4>h4. elementary heading</h4>
+        <h5>h5. elementary heading</h5>
+        <h6>h6. elementary heading</h6>
+        <pre>
+&lt;h1&gt;h1. elementary heading&lt;/h1&gt;
+&lt;h2&gt;h2. elementary heading&lt;/h2&gt;
+&lt;h3&gt;h3. elementary heading&lt;/h3&gt;
+&lt;h4&gt;h4. elementary heading&lt;/h4&gt;
+&lt;h5&gt;h5. elementary heading&lt;/h5&gt;
+&lt;h6&gt;h6. elementary heading&lt;/h6&gt;</pre>
     </section>
-    <h5 class="h-section">Paragraphs</h5>
+    <h2 class="styleguide">Body copy</h2>
     <section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend iaculis velit eu aliquet. Donec nibh mi, accumsan ut tempor vitae, bibendum sit amet ligula. Aenean fermentum pharetra adipiscing. Nam eget nisl eros. Duis cursus porttitor urna, sit amet consequat neque porttitor a. Vivamus vel odio ut lorem aliquet facilisis. Praesent tincidunt dignissim varius. Suspendisse lobortis fermentum libero eget imperdiet. Suspendisse lobortis ante mollis dolor tristique lacinia. Vivamus porta libero sed felis suscipit bibendum. Nam vulputate suscipit viverra. Pellentesque facilisis, lectus ac consectetur mattis, urna libero sagittis lectus, et porta lectus ligula et orci. Maecenas vulputate, turpis eget porttitor ullamcorper, felis massa molestie arcu, a molestie erat tellus nec nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Donec eleifend mi arcu, ac placerat leo.</p>
+        <pre>&lt;p&gt;. . .&lt;/p&gt;</pre>
     </section>
-    <h5 class="h-section">Blockquotes</h5>
-    <section>
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <small>Someone famous in Source Title</small>
-        </blockquote>
-    </section>
-    <h5 class="h-section">Miscellaneous HTML</h5>
+    <h2 class="styleguide">Miscellaneous elements</h2>
     <section>
         <p>
-            <a href="#">Anchor Tag</a>, <abbr title="Abbreviation">abbr.</abbr>, <strong>bold</strong>, <em>italic</em>, <code>code</code>, <del>deleted</del>, <ins>inserted</ins>, <kbd>Keyboard</kbd>, <sup>sup</sup>er and <sub>sub</sub>script.
+            <a href="">Anchor</a><br>
+            <abbr title="Abbreviation">abbr.</abbr><br>
+            <del>Deleted</del><br>
+            <ins>Inserted</ins><br>
+            <code>code</code><br>
+            <kbd>Keyboard</kbd><br>
         </p>
+        <pre>
+&lt;a href=""&gt;Anchor&lt;/a&gt;
+&lt;abbr title="Abbreviation"&gt;abbr.&lt;/abbr&gt;
+&lt;del&gt;Deleted&lt;/del&gt;
+&lt;ins&gt;Inserted&lt;/ins&gt;
+&lt;code&gt;code&lt;/code&gt;
+&lt;kbd&gt;Keyboard&lt;/kbd&gt;</pre>
     </section>
-    <h5 class="h-section">Navigation</h5>
+    <h2 class="styleguide">Blockquote</h2>
+    <p class="styleguide">Wrap a <code>&lt;blockquote&gt;</code> around any <code>&lt;p&gt;</code>, and wrap the citation <code>&lt;small&gt;</code>.</p>
     <section>
-        <nav>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Journal</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Developer</a></li>
-        </nav>
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p>
+            <small>Someone famous in Source Title</small>
+        </blockquote>
+        <pre>&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante&lt;/p&gt;
+    &lt;small&gt;Someone famous in Source Title&lt;/small&gt;
+&lt;/blockquote&gt;</pre>
     </section>
-    <h5 class="h-section">Buttons</h5>
+    <hr>
+    <h1 class="styleguide">Buttons</h1>
+    <h2 class="styleguide">Default</h2>
+    <p class="styleguide">Add the <code>.btn</code> class to any <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> to create a button.</p>
+    <p class="styleguide"><strong>For compatibility reasons, it is recommended to only use the <code>&lt;a&gt;</code> element for buttons</strong></p>
     <section>
-        <section>
-            <a href="" class="btn">Anchor</a> <button class="btn">Button</button> <input type="button" class="btn" value="Input">
-        </section>
-        <hr>
-        <section>
-            <button class="btn btn-large">Large Button</button>
-        </section>
-        <hr>
-        <section>
-            <button class="btn btn-blue">Blue</button> <button class="btn btn-red">Red</button> <button class="btn btn-black">Black</button>
-        </section>
-        <hr>
-        <section>
-            <button class="btn btn-large btn-blue">Large Blue Button</button>
-        </section>
+        <a href="" class="btn">Anchor</a> <button class="btn">Button</button> <input type="button" class="btn" value="Input">
+        <pre>&lt;a href="" class="btn"&gt;Anchor&lt;/a&gt;
+&lt;button class="btn"&gt;Button&lt;/button&gt;
+&lt;input type="button" class="btn" value="Input"&gt;</pre>
     </section>
-    <h5 class="h-section">Infobars</h5>
+    <p class="styleguide">For blue, red, dark, or light buttons, add <code>.btn-blue</code>, <code>.btn-red</code>, <code>.btn-dark</code>, or <code>.btn-light</code> to the class.</p>
     <section>
-        <div class="infobar info">
-            <em>Info</em>
-            <button class="btn btn-clear"><i class="icon-info"></i> Button</button>
-        </div>
-        <div class="infobar question">
-            <em>Question</em>
-            <button class="btn btn-clear"><i class="icon-starred"></i> Button</button>
-        </div>
-        <div class="infobar warning">
-            <em>Warning</em>
-            <button class="btn btn-clear"><i class="icon-lock"></i> Button</button>
-        </div>
-        <div class="infobar error">
-            <em>Error</em>
-            <button class="btn btn-clear"><i class="icon-error"></i> Button</button>
-        </div>
+        <a href="" class="btn btn-blue">Blue Button</a> <a href="" class="btn btn-red">Red Button</a> <a href="" class="btn btn-dark">Dark Button</a> <a href="" class="btn btn-light">Light Button</a>
+        <pre>&lt;a href="" class="btn btn-blue"&gt;Blue Button&lt;/a&gt;
+&lt;a href="" class="btn btn-red"&gt;Red Button&lt;/a&gt;
+&lt;a href="" class="btn btn-dark"&gt;Dark Button&lt;/a&gt;
+&lt;a href="" class="btn btn-light"&gt;Light Button&lt;/a&gt;</pre>
     </section>
-    <h5 class="h-section">Radio and Checkbox</h5>
+    <h2 class="styleguide">Large</h2>
+    <p class="styleguide">Add the <code>.btn-large</code> class to a button to double its size.</p>
     <section>
-        <label for="r1">Radio Button</label>
-        <input type="radio" id="r1" name="r"><span></span>
-        <br>
-        <label for="r2">Radio Button</label>
-        <input type="radio" id="r2" name="r" checked><span></span>
-        <br>
-        <label for="radio-3">Radio Button</label>
-        <input type="radio" id="r3" name="r"><span></span>
-        <br>
+        <a href="" class="btn btn-lg">Large Button</a> <a href="" class="btn btn-blue btn-lg">Large Blue Button</a>
+        <pre>&lt;a href="" class="btn btn-lg"&gt;Large Button&lt;/a&gt;
+&lt;a href="" class="btn btn-blue btn-lg"&gt;Large Blue Button Button&lt;/a&gt;</pre>
+    </section>
+    <h2 class="styleguide">Active</h2>
+    <p class="styleguide">Add the <code>.active</code> class to a button to keep it pressed.</p>
+    <section>
+        <a href="" class="btn btn-red active">Active Red Button</a>
+        <pre>&lt;a href="" class="btn btn-red active"&gt;Active Red Button&lt;/a&gt;</pre>
+    </section>
+    <h2 class="styleguide">Disabled</h2>
+    <p class="styleguide">Add the <code>.disabled</code> class to a button to generate the disabled style.</p>
+    <p class="styleguide"><strong>The <code>.disabled</code> class can be added to any element to disable clicking or highlighting on supported browsers.</strong></p>
+    <section>
+        <a href="" class="btn btn-red disabled">Disabled Red Button</a> <a href="" class="btn btn-blue active disabled">Disabled Active Blue Button</a>
+        <pre>&lt;a href="" class="btn btn-red disabled"&gt;Disabled Red Button&lt;/a&gt;
+&lt;a href="" class="btn btn-blue active disabled"&gt;Disabled Active Blue Button&lt;/a&gt;</pre>
+    </section>
+    <hr>
+    <h1 class="styleguide">Form Elements</h1>
+    <h2 class="styleguide">Checkboxes</h2>
+    <p class="styleguide"><code>jquery.min.js</code> and <code>elementary.js</code> are required for custom checkboxes and radios.</p>
+    <section>
+        <input type="checkbox" id="c1">
         <label for="c1">Checkbox</label>
-        <input type="checkbox" id="c1" checked><span></span>
         <br>
+        <input type="checkbox" id="c2" checked>
         <label for="c2">Checkbox</label>
-        <input type="checkbox" id="c2"><span></span>
-        <br>
-        <label for="c3">Checkbox</label>
-        <input type="checkbox" id="c3" checked><span></span>
+        <pre>&lt;input type="checkbox" id="c1"&gt;
+&lt;label for="c1"&gt;Checkbox&lt;/label&gt;</pre>
     </section>
-    <h5 class="h-section">Toggles</h5>
+    <h2 class="styleguide">Radios</h2>
     <section>
-        <a class="toggle"></a>
+        <input type="radio" id="r1" name="r" checked>
+        <label for="r1">Radio</label>
         <br>
-        <a class="toggle on"></a>
+        <input type="radio" id="r2" name="r">
+        <label for="r2">Radio</label>
+        <pre>&lt;input type="radio" id="r1" name="r"&gt;
+&lt;label for="r1"&gt;Radio&lt;/label&gt;</pre>
     </section>
-    <h5 class="h-section">Slider and Progress</h5>
+    <h2 class="styleguide">Text Fields</h2>
     <section>
-        <div class="slider"></div>
-        <br>
-        <div class="progress"></div>
-    </section>
-    <h5 class="h-section">Text Fields</h5>
-    <section>
-        <input type="text" placeholder="Text Field">
+        <input type="text" placeholder="Text">
         <br>
         <input type="search" placeholder="Search">
         <br>
         <input type="password" placeholder="Password">
         <br>
-        <textarea placeholder="Textarea"></textarea>
+        <textarea placeholder="Textarea" rows="3"></textarea>
+        <pre>&lt;input type="text" placeholder="Text"&gt;
+&lt;input type="search" placeholder="Search"&gt;
+&lt;input type="password" placeholder="Password"&gt;
+&lt;textarea placeholder="Textarea" rows="3"&gt;&lt;/textarea&gt;</pre>
     </section>
-    <h5 class="h-section">Icons</h5>
-    <ul class="icons">
-        <li><i class="icon-up"></i> icon-up</li>
-        <li><i class="icon-next"></i> icon-next</li>
-        <li><i class="icon-down"></i> icon-down</li>
-        <li><i class="icon-previous"></i> icon-previous</li>
-        <li><i class="icon-top"></i> icon-top</li>
-        <li><i class="icon-last"></i> icon-last</li>
-        <li><i class="icon-bottom"></i> icon-bottom</li>
-        <li><i class="icon-first"></i> icon-first</li>
-        <li><i class="icon-home"></i> icon-home</li>
-        <li><i class="icon-folder"></i> icon-folder</li>
-        <li><i class="icon-harddisk"></i> icon-harddisk</li>
-        <li><i class="icon-delete"></i> icon-delete</li>
-        <li><i class="icon-camera"></i> icon-camera</li>
-        <li><i class="icon-camcorder"></i> icon-camcorder</li>
-        <li><i class="icon-minus"></i> icon-minus</li>
-        <li><i class="icon-plus"></i> icon-plus</li>
-        <li><i class="icon-error"></i> icon-error</li>
-        <li><i class="icon-complete"></i> icon-complete</li>
-        <li><i class="icon-close"></i> icon-close</li>
-        <li><i class="icon-clear-left"></i> icon-clear-left</li>
-        <li><i class="icon-clear-right"></i> icon-clear-right</li>
-        <li><i class="icon-twitter"></i> icon-twitter</li>
-        <li><i class="icon-facebook"></i> icon-facebook</li>
-        <li><i class="icon-starred"></i> icon-starred</li>
-        <li><i class="icon-unstarred"></i> icon-unstarred</li>
-        <li><i class="icon-phone"></i> icon-phone</li>
-        <li><i class="icon-music"></i> icon-music</li>
-        <li><i class="icon-video"></i> icon-video</li>
-        <li><i class="icon-pictures"></i> icon-pictures</li>
-        <li><i class="icon-document"></i> icon-document</li>
-        <li><i class="icon-globe"></i> icon-globe</li>
-        <li><i class="icon-accessibility"></i> icon-accessibility</li>
-        <li><i class="icon-lock"></i> icon-lock</li>
-        <li><i class="icon-unlock"></i> icon-unlock</li>
-        <li><i class="icon-lock-alt"></i> icon-lock-alt</li>
-        <li><i class="icon-unlock-alt"></i> icon-unlock-alt</li>
-        <li><i class="icon-restore"></i> icon-restore</li>
-        <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
-        <li><i class="icon-contact"></i> icon-contact</li>
-        <li><i class="icon-contact-new"></i> icon-contact-new</li>
-        <li><i class="icon-contact-group"></i> icon-contact-group</li>
-        <li><i class="icon-undo"></i> icon-undo</li>
-        <li><i class="icon-redo"></i> icon-redo</li>
-        <li><i class="icon-pane-left"></i> icon-pane-left</li>
-        <li><i class="icon-pane-right"></i> icon-pane-right</li>
-        <li><i class="icon-export"></i> icon-export</li>
-        <li><i class="icon-text-smaller"></i> icon-text-smaller</li>
-        <li><i class="icon-text-larger"></i> icon-text-larger</li>
-        <li><i class="icon-justify-right"></i> icon-justify-right</li>
-        <li><i class="icon-justify-center"></i> icon-justify-center</li>
-        <li><i class="icon-justify-left"></i> icon-justify-left</li>
-        <li><i class="icon-justify-fill"></i> icon-justify-fill</li>
-        <li><i class="icon-indent-left"></i> icon-indent-left</li>
-        <li><i class="icon-indent-right"></i> icon-indent-right</li>
-        <li><i class="icon-attachment"></i> icon-attachment</li>
-        <li><i class="icon-print"></i> icon-print</li>
-        <li><i class="icon-recent"></i> icon-recent</li>
-        <li><i class="icon-refresh"></i> icon-refresh</li>
-        <li><i class="icon-synchronize"></i> icon-synchronize</li>
-        <li><i class="icon-info"></i> icon-info</li>
-        <li><i class="icon-jump"></i> icon-jump</li>
-        <li><i class="icon-download"></i> icon-download</li>
-        <li><i class="icon-crop"></i> icon-crop</li>
-        <li><i class="icon-search"></i> icon-search</li>
-        <li><i class="icon-signal-none"></i> icon-signal-none</li>
-        <li><i class="icon-signal-one"></i> icon-signal-one</li>
-        <li><i class="icon-signal-two"></i> icon-signal-two</li>
-        <li><i class="icon-signal-three"></i> icon-signal-three</li>
-        <li><i class="icon-signal-four"></i> icon-signal-four</li>
-        <li><i class="icon-play"></i> icon-play</li>
-        <li><i class="icon-pause"></i> icon-pause</li>
-        <li><i class="icon-backward"></i> icon-backward</li>
-        <li><i class="icon-forward"></i> icon-forward</li>
-        <li><i class="icon-eject"></i> icon-eject</li>
-        <li><i class="icon-shuffle"></i> icon-shuffle</li>
-        <li><i class="icon-order"></i> icon-order</li>
-        <li><i class="icon-repeat"></i> icon-repeat</li>
-        <li><i class="icon-repeat-one"></i> icon-repeat-one</li>
-        <li><i class="icon-wifi-off"></i> icon-wifi-off</li>
-        <li><i class="icon-wifi"></i> icon-wifi</li>
-        <li><i class="icon-bluetooth"></i> icon-bluetooth</li>
-        <li><i class="icon-brightness"></i> icon-brightness</li>
-        <li><i class="icon-audio"></i> icon-audio</li>
-        <li><i class="icon-toggles"></i> icon-toggles</li>
-        <li><i class="icon-gear"></i> icon-gear</li>
-        <li><i class="icon-power"></i> icon-power</li>
-        <li><i class="icon-column"></i> icon-column</li>
-        <li><i class="icon-coverflow"></i> icon-coverflow</li>
-        <li><i class="icon-filter"></i> icon-filter</li>
-        <li><i class="icon-grid"></i> icon-grid</li>
-        <li><i class="icon-list-compact"></i> icon-list-compact</li>
-        <li><i class="icon-list"></i> icon-list</li>
-    </ul>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <h2 class="styleguide">Slider</h2>
+    <p class="styleguide">The slider widget is powered by <code>jQuery UI</code>, you can find the API <a href="http://api.jqueryui.com/slider/">here</a></p>
+    <section>
+        <div class="slider"></div>
+        <pre>&lt;div class="slider"&gt;&lt;/div&gt;</pre>
+    </section>
+    <h2 class="styleguide">Progress Bar</h2>
+    <p class="styleguide">The progress bar widget is powered by <code>jQuery UI</code>, you can find the API <a href="http://api.jqueryui.com/progressbar/">here</a></p>
+    <section>
+        <div class="progress"></div>
+        <pre>&lt;div class="progress"&gt;&lt;/div&gt;</pre>
+    </section>
+    <hr>
+    <h1 class="styleguide">Infobars</h1>
+    <p class="styleguide">Infobars are block elements meant to convey contextual information and provide an action.</p>
+    <p class="styleguide">For more information on the usage of infobars, visit the <a href="http://elementaryos.org/docs/human-interface-guidelines/infobars">elementary OS Guidelines</a> on infobars</p>
+    <section>
+        <div class="infobar info">
+            <em>Info</em>
+            <a href="" class="btn"><i class="icon-info"></i> Button</a>
+        </div>
+        <div class="infobar question">
+            <em>Question</em>
+            <a href="" class="btn"><i class="icon-starred"></i> Button</a>
+        </div>
+        <div class="infobar warning">
+            <em>Warning</em>
+            <a href="" class="btn"><i class="icon-lock"></i> Button</a>
+        </div>
+        <div class="infobar error">
+            <em>Error</em>
+            <a href="" class="btn"><i class="icon-error"></i> Button</a>
+        </div>
+        <pre>&lt;div class="infobar info"&gt;
+    &lt;em&gt;Info&lt;/em&gt;
+    &lt;a href="" class="btn"&gt;&lt;i class="icon-info"&gt;&lt;/i&gt; Button&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="infobar question"&gt;
+    &lt;em&gt;Question&lt;/em&gt;
+    &lt;a href="" class="btn"&gt;&lt;i class="icon-starred"&gt;&lt;/i&gt; Button&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="infobar warning"&gt;
+    &lt;em&gt;Warning&lt;/em&gt;
+    &lt;a href="" class="btn"&gt;&lt;i class="icon-lock"&gt;&lt;/i&gt; Button&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="infobar error"&gt;
+    &lt;em&gt;Error&lt;/em&gt;
+    &lt;a href="" class="btn"&gt;&lt;i class="icon-error"&gt;&lt;/i&gt; Button&lt;/a&gt;
+&lt;/div&gt;</pre>
+    </section>
+    <p class="styleguide"><strong>You can place an icon in the <code>&lt;em&gt;</code></strong></p>
+    <section>
+        <div class="infobar warning">
+            <em><i class="icon-lock"></i> Warning</em>
+            <a href="" class="btn">Button</a>
+        </div>
+        <pre>
+&lt;div class="infobar warning"&gt;
+    &lt;em&gt;&lt;i class="icon-lock"&gt;&lt;/i&gt; Warning&lt;/em&gt;
+    &lt;a href="" class="btn"&gt;Button&lt;/a&gt;
+&lt;/div&gt;</pre>
+    </section>
+    <hr>
+    <h1 class="styleguide">Navigation Bar</h2>
+    <section>
+        <nav>
+            <li><a href="">Journal</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Developer</a></li>
+            <li><a href="">Store</a></li>
+        </nav>
+        <pre>&lt;nav&gt;
+    &lt;li&gt;&lt;a href=""&gt;Journal&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=""&gt;Support&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=""&gt;Developer&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=""&gt;Store&lt;/a&gt;&lt;/li&gt;
+&lt;/nav&gt;</pre>
+    </section>
+    <hr>
+    <h1 class="styleguide">Icons</h1>
+    <p class="styleguide">To add an icon to an inline element, use the following code:</p>
+    <pre>&lt;i class="[icon name]"&gt;&lt;/i&gt;</pre>
+    <p class="styleguide">For example, <code>&lt;i class="icon-music"&gt;&lt;/i&gt;</code> becomes <i class="icon-music"></i></p>
+    <p class="styleguide"><strong>All of the <code>icon-</code> names can be found below:</strong></p>
+    <section>
+        <ul class="icons">
+            <li><i class="icon-accessibility"></i> icon-accessibility</li>
+            <li><i class="icon-attachment"></i> icon-attachment</li>
+            <li><i class="icon-audio"></i> icon-audio</li>
+            <li><i class="icon-backward"></i> icon-backward</li>
+            <li><i class="icon-bluetooth"></i> icon-bluetooth</li>
+            <li><i class="icon-bottom"></i> icon-bottom</li>
+            <li><i class="icon-brightness"></i> icon-brightness</li>
+            <li><i class="icon-camcorder"></i> icon-camcorder</li>
+            <li><i class="icon-camera"></i> icon-camera</li>
+            <li><i class="icon-clear-left"></i> icon-clear-left</li>
+            <li><i class="icon-clear-right"></i> icon-clear-right</li>
+            <li><i class="icon-close"></i> icon-close</li>
+            <li><i class="icon-column"></i> icon-column</li>
+            <li><i class="icon-complete"></i> icon-complete</li>
+            <li><i class="icon-contact"></i> icon-contact</li>
+            <li><i class="icon-contact-group"></i> icon-contact-group</li>
+            <li><i class="icon-contact-new"></i> icon-contact-new</li>
+            <li><i class="icon-coverflow"></i> icon-coverflow</li>
+            <li><i class="icon-crop"></i> icon-crop</li>
+            <li><i class="icon-delete"></i> icon-delete</li>
+            <li><i class="icon-document"></i> icon-document</li>
+            <li><i class="icon-down"></i> icon-down</li>
+            <li><i class="icon-download"></i> icon-download</li>
+            <li><i class="icon-eject"></i> icon-eject</li>
+            <li><i class="icon-error"></i> icon-error</li>
+            <li><i class="icon-export"></i> icon-export</li>
+            <li><i class="icon-facebook"></i> icon-facebook</li>
+            <li><i class="icon-filter"></i> icon-filter</li>
+            <li><i class="icon-first"></i> icon-first</li>
+            <li><i class="icon-folder"></i> icon-folder</li>
+            <li><i class="icon-forward"></i> icon-forward</li>
+            <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
+            <li><i class="icon-gear"></i> icon-gear</li>
+            <li><i class="icon-globe"></i> icon-globe</li>
+            <li><i class="icon-grid"></i> icon-grid</li>
+            <li><i class="icon-harddisk"></i> icon-harddisk</li>
+            <li><i class="icon-home"></i> icon-home</li>
+            <li><i class="icon-indent-left"></i> icon-indent-left</li>
+            <li><i class="icon-indent-right"></i> icon-indent-right</li>
+            <li><i class="icon-info"></i> icon-info</li>
+            <li><i class="icon-jump"></i> icon-jump</li>
+            <li><i class="icon-justify-center"></i> icon-justify-center</li>
+            <li><i class="icon-justify-fill"></i> icon-justify-fill</li>
+            <li><i class="icon-justify-left"></i> icon-justify-left</li>
+            <li><i class="icon-justify-right"></i> icon-justify-right</li>
+            <li><i class="icon-last"></i> icon-last</li>
+            <li><i class="icon-list"></i> icon-list</li>
+            <li><i class="icon-list-compact"></i> icon-list-compact</li>
+            <li><i class="icon-lock"></i> icon-lock</li>
+            <li><i class="icon-lock-alt"></i> icon-lock-alt</li>
+            <li><i class="icon-minus"></i> icon-minus</li>
+            <li><i class="icon-music"></i> icon-music</li>
+            <li><i class="icon-next"></i> icon-next</li>
+            <li><i class="icon-order"></i> icon-order</li>
+            <li><i class="icon-pane-left"></i> icon-pane-left</li>
+            <li><i class="icon-pane-right"></i> icon-pane-right</li>
+            <li><i class="icon-pause"></i> icon-pause</li>
+            <li><i class="icon-phone"></i> icon-phone</li>
+            <li><i class="icon-pictures"></i> icon-pictures</li>
+            <li><i class="icon-play"></i> icon-play</li>
+            <li><i class="icon-plus"></i> icon-plus</li>
+            <li><i class="icon-power"></i> icon-power</li>
+            <li><i class="icon-previous"></i> icon-previous</li>
+            <li><i class="icon-print"></i> icon-print</li>
+            <li><i class="icon-recent"></i> icon-recent</li>
+            <li><i class="icon-redo"></i> icon-redo</li>
+            <li><i class="icon-refresh"></i> icon-refresh</li>
+            <li><i class="icon-repeat"></i> icon-repeat</li>
+            <li><i class="icon-repeat-one"></i> icon-repeat-one</li>
+            <li><i class="icon-restore"></i> icon-restore</li>
+            <li><i class="icon-search"></i> icon-search</li>
+            <li><i class="icon-shuffle"></i> icon-shuffle</li>
+            <li><i class="icon-signal-four"></i> icon-signal-four</li>
+            <li><i class="icon-signal-none"></i> icon-signal-none</li>
+            <li><i class="icon-signal-one"></i> icon-signal-one</li>
+            <li><i class="icon-signal-three"></i> icon-signal-three</li>
+            <li><i class="icon-signal-two"></i> icon-signal-two</li>
+            <li><i class="icon-starred"></i> icon-starred</li>
+            <li><i class="icon-synchronize"></i> icon-synchronize</li>
+            <li><i class="icon-text-larger"></i> icon-text-larger</li>
+            <li><i class="icon-text-smaller"></i> icon-text-smaller</li>
+            <li><i class="icon-toggles"></i> icon-toggles</li>
+            <li><i class="icon-top"></i> icon-top</li>
+            <li><i class="icon-twitter"></i> icon-twitter</li>
+            <li><i class="icon-undo"></i> icon-undo</li>
+            <li><i class="icon-unlock"></i> icon-unlock</li>
+            <li><i class="icon-unlock-alt"></i> icon-unlock-alt</li>
+            <li><i class="icon-unstarred"></i> icon-unstarred</li>
+            <li><i class="icon-up"></i> icon-up</li>
+            <li><i class="icon-video"></i> icon-video</li>
+            <li><i class="icon-wifi"></i> icon-wifi</li>
+            <li><i class="icon-wifi-off"></i> icon-wifi-off</li>
+        </ul>
+    </section>
+    <script src="../framework/js/jquery.min.js"></script>
+    <script src="../framework/js/jquery-ui.min.js"></script>
+    <script src="../framework/js/modernizr.min.js"></script>
+    <script src="../framework/js/elementary.js"></script>
     <script>
     $(function () {
-        $(".toggle").click(function () {
-            $(this).toggleClass("on")
-        });
         $(".slider").slider({
-            orientation: "horizontal",
             range: "min",
             value: 66
         });
