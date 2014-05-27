@@ -93,6 +93,7 @@ pre {
     border-radius: 3px;
     color: #707070;
     display: block;
+	font-family: 'Inconsolata', monospace;
     padding: 10px;
     margin: 20px 0;
     line-height: 1.5;
@@ -289,6 +290,10 @@ input[type="radio"] + .radioStyle {
     width: 14px;
     z-index: -1;
 }
+html.no-svg input[type="checkbox"] + .checkStyle,
+html.no-svg input[type="radio"] + .radioStyle {
+    background: url("../img/form.png");
+}
 input[type="radio"] + .radioStyle { background-position: 0 -14px }
 input[type="checkbox"]:checked + .checkStyle { background-position: -14px 0 }
 input[type="radio"]:checked + .radioStyle { background-position: -14px -14px }
@@ -359,7 +364,7 @@ textarea {
     left: -1px;
 }
 .ui-slider .ui-slider-handle {
-    background: url(../img/form.svg) -28px 0 no-repeat;
+    background: url("../img/form.svg") -28px 0 no-repeat;
     background-size: 46px 28px;
     cursor: ew-resize;
     display: inline-block;
@@ -368,6 +373,9 @@ textarea {
     outline: none;
     top: -8px;
     width: 18px;
+}
+html.no-svg .ui-slider .ui-slider-handle {
+	background: url("../img/form.png") -28px 0 no-repeat;
 }
 .ui-progressbar {
     border: 1px solid #424242;
