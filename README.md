@@ -1,6 +1,6 @@
 # elementary CSS
 
-elementary CSS is a CSS framework based on the design of [elementary OS](http://elementaryos.org/), a free and open source OS.
+elementary CSS is a CSS framework based on the design of [elementary OS](https://elementary.io/), a free and open source OS.
 
 For more elementary design, visit the [#elementaryOS](http://elementaryos.deviantart.com/) group on deviantART.
 
@@ -10,15 +10,14 @@ For more elementary design, visit the [#elementaryOS](http://elementaryos.devian
 
 To use elementary CSS in your project, use the resources found in the `framework` folder.
 
-## Browser Support
+## Minimum Browser Support
 
 * Google Chrome
-* Internet Explorer 10+*
+* Microsoft Edge
 * Mozilla Firefox
-* Opera 12+
-* Safari 5+
-
-*\*Functional in IE8+*
+* Internet Explorer 10
+* Opera 12
+* Safari 5
 
 ## License and Attributions
 
